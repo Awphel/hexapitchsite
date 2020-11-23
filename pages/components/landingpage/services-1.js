@@ -12,7 +12,7 @@ export default function LandingServices() {
             <div className="sectionIMAGE_services">
                 <ul id="imageText">
                     <li><a href="/components/services/services/#supplyChain">Supply Chain Management</a></li>
-                    <li><a href="">Quality Control</a></li>
+                    <li><a href="/components/services/services/#quality">Quality Control</a></li>
                 </ul>
             </div>
 
