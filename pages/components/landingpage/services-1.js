@@ -6,7 +6,7 @@ export default function LandingServices() {
       <div className="col-12">
         <h1>An Integrated <font color = "#48c2c8" > Service</font></h1>
       </div>
-      
+
 
         <div className="col-12">
             <div className="sectionIMAGE_services">
@@ -15,13 +15,13 @@ export default function LandingServices() {
                     <li><a href="">Quality Control</a></li>
                 </ul>
             </div>
-            
+
         <p className="mainText">
             We integrate quality management with supply chain management. A system where you only need to tell us what you need, and we take care of the rest for you. From sourcing the products, marketing, auditing, legal, payment processing, and logistics.<a href="#landingUS" className ="textLINK_MORE"><i> - Choose Hexa.</i></a>
         </p>
         <p>
-            <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Make an Enquiry</a> 
-            <a href="/components/products/products" type="button" className ="btn primaryCTA" >Browse Products</a> 
+            <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Make an Enquiry</a>
+            <a href="/components/products/products" type="button" className ="btn primaryCTA" >Browse Products</a>
         </p>
 
         </div>
@@ -40,18 +40,18 @@ export default function LandingServices() {
             height: 7em;
             width: 7em;
         }
-        
+
        #imageText {
            list-style-type: none;
            padding: 0;
        }
-       
+
        #imageText li {
            float: left;
            margin-right: 10%;
            margin-left: 10%;
        }
-       
+
        #imageText li a{
            width: 10em;
            display: block;
@@ -61,19 +61,19 @@ export default function LandingServices() {
            text-align: center;
            color: rgb(50,58,107);
            text-decoration: none!important;
-            
+
        }
-       
+
        #imageText li a:hover {
            color: rgb(257,29,95);
        }
-      
+
       .mainText {
           width: 50em;
           margin-left: auto;
           margin-right: auto;
       }
-      
+
       .sectionIMAGE_services {
           background-image: url("/infinity_image.png");
           background-repeat: no-repeat;
@@ -89,38 +89,38 @@ export default function LandingServices() {
           width: 25em;
           height: 15em;
       }
-      
+
       .sectionIMAGE_services:hover {
           opacity: .7;
       }
-      
+
       .primaryCTA {
         border: 1px solid rgb(50,58,107);
         padding: .5em 1.5em .5em 1.5em;
         text-transform: uppercase;
         margin: 2em 0 .3em 2em;
-        color: rgb(50,58,107);
+        color: rgb(50,58,107)!important;
         border-radius: 3em;
         transition: .5s;
         transition: .8s;
       }
-      
+
       .secondaryCTA {
           color: #fff;
           border-radius: 3em;
           margin: 1.85em 0 .3em 0em;
           text-transform: uppercase;
           padding: .5em 1.5em .5em 1.5em;
-          background-color: rgb(50,58,107);
+          background-color: rgb(50,58,107)!important;
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
       }
-      
+
       .primaryCTA:hover {
         color: #fff;
         background-color: rgb(50,58,107);
         box-shadow: none;
       }
-      
+
       .secondaryCTA:hover {
         color: #fff;
         background-color: #48c2c8;
@@ -128,7 +128,7 @@ export default function LandingServices() {
         box-shadow: none;
       }
 
-      
+
       .textLINK_MORE {
         color: rgb(257,29,95);
         text-decoration: none;
@@ -139,7 +139,7 @@ export default function LandingServices() {
         color: rgb(50,58,107);
         text-decoration: none!important;
       }
-      
+
       .Landing_Services h1 {
         font-family: 'Open Sans';
         color: rgb(50,58,107);
@@ -149,7 +149,7 @@ export default function LandingServices() {
         font-weight: 550;
         font-size: 2em;
       }
-      
+
       .section_head_intro {
           width: 50em;
           margin-left: auto;
