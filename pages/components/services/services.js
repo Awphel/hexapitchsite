@@ -12,7 +12,7 @@ export default function ServicesMain() {
     <
     Head >
     <
-    title > Hexa < /title> <
+    title > Hexa - Services < /title> <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap CSS
@@ -31,7 +31,7 @@ export default function ServicesMain() {
 
     {/* Nevigation Starts */}
         <
-        NevigationBar /> 
+        NevigationBar />
         <
         ServicesHeader / >
         <
@@ -43,7 +43,7 @@ export default function ServicesMain() {
         <
         Policy />
     <
-    
+
     script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossOrigin = "anonymous" > < /script> <
@@ -60,18 +60,18 @@ export default function ServicesMain() {
     script type = "text/javascript" >
     window.onscroll = navmorph; <
     /script>
-    
+
 
     <
     script type = "text/javasrcript"
     src ="/typeform.js" ></script>
-    
+
     <
     style jsx global > {
       `
         html,
         body {
-          
+
           font-family: 'Open Sans',
             Oxygen, Ubuntu;
           margin: 0!important;
@@ -83,7 +83,7 @@ export default function ServicesMain() {
           scroll-snap-type: mandatory;
           zoom: 100%;
         }
-        
+
         .container {
             margin: 0!important;
             width: 100%!important;

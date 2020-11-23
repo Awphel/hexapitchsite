@@ -9,10 +9,10 @@ export default function AboutHeader() {
     div className = "col-sm intro" >
     <
     h1 > About< font color = "#48c2c8" > Us< /font>< /h1 >
-    
+
     <h3> We're passionate</h3>
     <p>  about redressing the imbalance in the medical supply chain.</p>
-    
+
     {/* Secondary Nevigation buttons */}
     <p className="secondaryNAV">
     <ul className="breadcrumbs">
@@ -22,45 +22,45 @@ export default function AboutHeader() {
     </ul>
     </p>
      < /
-    div > 
+    div >
     < /
     div >
-    
+
     {/* Scroll Down Cue **/}
     <
     section className = "header-down-arrow" >
     <p className="scrollCue">scroll down</p>
-    <a href="#section_one">
+    <a href="#we_exist">
     <
     img src = "https://cssanimation.rocks/levelup/public/images/downarrow.png"
     width = "30" / ></a>
     <
     /section>
-    
+
     <
     /div>
 
     <
     style jsx global> {
       `
-      
+
       .breadcrumbs {
           color: #888;
           margin: 0;
           padding: 0;
-        
+
       }
-      
+
       .breadcrumbs_list {
           float: left;
           margin: 1em;
       }
-      
+
       .secondaryNAV {
           margin-top: 5em;
           font-size: .8em;
       }
-      
+
       .secondaryNAV-LINKS {
           transition: .5s;
           padding-left: .5em;
@@ -68,18 +68,18 @@ export default function AboutHeader() {
           color: #48c2c8;
           display: block;
       }
-      
+
       .secondaryNAV-LINKS:hover {
           color: grey;
           font-size: 1.2em;
           text-decoration: none!important;
       }
-      
+
       .scrollCue {
           color: #6f7c80;
           font-size: .85em;
       }
-    
+
       h1 {
         font-family: 'Open Sans';
         color: rgb(50,58,107);
@@ -89,12 +89,12 @@ export default function AboutHeader() {
         font-weight: 550;
         font-size: 3em;
       }
-      
+
       h3 {
           margin-bottom: .5em;
           margin-top: 2em;
       }
-      
+
       h4 {
         margin-bottom: 2em;
         word-spacing: .15em;
@@ -107,7 +107,7 @@ export default function AboutHeader() {
         word-spacing: .15em;
       }
 
-      
+
       .secondary_icons {
         margin-right: .5em;
         margin-left: .3em;
@@ -150,7 +150,7 @@ export default function AboutHeader() {
         text-align: center;
         margin-top: 8%;
       }
-      
+
       .textLINK_MORE {
         color: rgb(257,29,95);
         text-decoration: none;

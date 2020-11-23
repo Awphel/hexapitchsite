@@ -76,7 +76,7 @@ export default function Products({
       </li>
     </ul>
     </div>
-    <div className="col-12 notifications">
+    <div className="col-6 notifications">
       <h5 id="thehead"><b>Showing:</b> Random PPE Products </h5>
     </div>
 
@@ -366,8 +366,11 @@ export default function Products({
 
         .notifications {
           border-bottom: 1px solid #c6c6c6;
-          padding: .5em;
-          text-align: left;
+          margin-bottom: 1em;
+          margin-right: auto;
+          margin-left: auto;
+          padding: .5em .5em .5em .5em;
+      
         }
       `
     } < /style>
