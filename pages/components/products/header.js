@@ -23,23 +23,6 @@ export default function ProductsHeader() {
     <
     style jsx global > {
       `
-      .scrollCue {
-          color: #6f7c80;
-          font-size: .85em;
-      }
-
-      .social {
-          margin-top: 2em;
-      }
-      .fab {
-          color: #fff;
-      }
-      .linebreak {
-          background-color: #fff;
-          width: 40%;
-          margin: 0;
-      }
-
       .secondaryNAV {
           margin-top: 5em;
           font-size: .8em;
@@ -113,9 +96,7 @@ export default function ProductsHeader() {
       }
 
       .intro {
-        margin-left: 5em;
-        margin-top: 15%;
-        padding-right: 15em;
+        margin-top: 13%;
       }
 
       .textLINK_MORE {

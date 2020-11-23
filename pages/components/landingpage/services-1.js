@@ -4,7 +4,7 @@ export default function LandingServices() {
     <
     div id="landingServices" className = "row Landing_Services" >
       <div className="col-12">
-        <h1>An Integrated <font color = "#48c2c8" > Service</font></h1>
+        <h1>An Integrated Service</h1>
       </div>
 
 
@@ -21,7 +21,7 @@ export default function LandingServices() {
         </p>
         <p>
             <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Make an Enquiry</a>
-            <a href="/components/products/products" type="button" className ="btn primaryCTA" >Browse Products</a>
+            <a href="/components/products/products" type="button" className ="btn primaryCTA" >View Products</a>
         </p>
 
         </div>
@@ -111,19 +111,20 @@ export default function LandingServices() {
           margin: 1.85em 0 .3em 0em;
           text-transform: uppercase;
           padding: .5em 1.5em .5em 1.5em;
-          background-color: rgb(50,58,107)!important;
+          background-color: rgb(50,58,107);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
       }
 
       .primaryCTA:hover {
-        color: #fff;
+        color: #fff!important;
         background-color: rgb(50,58,107);
         box-shadow: none;
       }
 
       .secondaryCTA:hover {
-        color: #fff;
-        background-color: #48c2c8;
+        color: rgb(50,58,107);
+        border: 1px solid rgb(50,58,107);
+        background-color: #fff;
         text-decoration: none;
         box-shadow: none;
       }
@@ -141,6 +142,7 @@ export default function LandingServices() {
       }
 
       .Landing_Services h1 {
+        font-variant-caps: all-small-caps;
         font-family: 'Open Sans';
         color: rgb(50,58,107);
         margin-bottom: .5em;

@@ -7,9 +7,9 @@ export default function HomeHeader() {
     <
     div className = "row" >
     <
-    div className = "col-sm intro" >
+    div className = "col-12 intro" >
     <
-    h1 > A NEW KIND OF < font color = "#48c2c8" > MEDICAL SUPPLY CHAIN </font>< /h1 >
+    h1 > A NEW KIND OF MEDICAL SUPPLY CHAIN < /h1 >
     <
     p id = "introText" >
     The first platform that brings together global supplies, standerdised quality control, and logistics. <

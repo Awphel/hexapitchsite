@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import HomeHeader from './components/landingpage/homeheader.js';
+import HomeHeader_1 from './components/landingpage/homeheader_1.js';
 import Footer from './components/footer/footer.js';
 import LandingServices from './components/landingpage/services-1.js';
 import LandingTestimonials from './components/landingpage/testimonials.js';
@@ -14,7 +15,7 @@ export default function Home() {
     <
     Head >
     <
-    title > Hexa < /title> 
+    title > Hexa < /title>
     <
     link rel = "icon"
     href = "/favicon.ico" / >
@@ -35,7 +36,7 @@ export default function Home() {
     <
     NevigationBar />
     <
-    HomeHeader / >
+    HomeHeader_1 / >
     <
     LandingServices / >
     <
@@ -48,7 +49,7 @@ export default function Home() {
     Policy />
 
     <
-    
+
     script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossOrigin = "anonymous" > < /script> <
@@ -65,7 +66,7 @@ export default function Home() {
     script type = "text/javascript" >
     window.onscroll = navmorph; <
     /script>
-    
+
 
     <
     script type = "text/javasrcript"
@@ -86,11 +87,15 @@ export default function Home() {
     <
     style jsx global > {
       `
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
+
+
         html,
         body {
-          
-          font-family: 'Open Sans',
-            Oxygen, Ubuntu;
+
+          font-family: 'Open Sans', 'Sans-Serif', 'Ubuntu';
+          margin: 0!important;
           margin: 0!important;
           padding: 0!important;
           overflow-x: hidden;

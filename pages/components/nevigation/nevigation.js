@@ -43,12 +43,12 @@ export default function NevigationBar() {
     li className = "nav-item" >
     <
     a className = "nav-link"
-    href = "/#" > 
-    Home 
+    href = "/#" >
+    Home
     </a>
     < /
-    li > 
-    
+    li >
+
     <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Services
@@ -59,13 +59,13 @@ export default function NevigationBar() {
           <a className="dropdown-item" href="/components/services/services/#quality">Quality compliance</a>
         </div>
       </li>
-    
+
      <
     li className = "nav-item" >
     <
     a className = "nav-link"
-    href = "/#landingUS" > 
-    Why Us 
+    href = "/#landingUS" >
+    Why Us
     <
         /a>
     < /
@@ -74,7 +74,7 @@ export default function NevigationBar() {
     <
     a className = "nav-link" href="/components/about/about-us"
      >
-     About Us 
+     About Us
      <
         /a>
      < /
@@ -87,18 +87,18 @@ export default function NevigationBar() {
     /ul> <
     div className = "number" >
     <a href="/components/products/products">
-     Browse Products</a>
+     View Products</a>
      <
     /div> < /
-    div > 
-    
+    div >
+
     {/* scroll progress indicator */}
         <div id="progress-container">
             <div className="progress-bar" id="myBar"></div>
         </div>
     <
-    /nav> 
-    
+    /nav>
+
     < /
     div >
     </div>
@@ -114,7 +114,7 @@ export default function NevigationBar() {
           position: absolute;
           visibility: hidden;
           transition: 0.3s;
-          
+
 }
 
     .progress-bar {
@@ -123,7 +123,7 @@ export default function NevigationBar() {
           width: 0%;
 }
 
-      
+
       .dropdown-menu {
           min-width: 100%;
           font-size: .95em;
@@ -131,11 +131,11 @@ export default function NevigationBar() {
           text-transform: uppercase;
           opacity: 1;
       }
-      
+
       .dropdown-item {
           color: white;
       }
-      
+
       .nav-item {
         margin-right: 1em;
         color: #fff;
@@ -144,11 +144,11 @@ export default function NevigationBar() {
       .nav-link {
         color: #fff!important;
       }
-        
+
     .nav-link:hover {
         color: #48c2c8!important;
     }
-    
+
     .active {
         color: #48c2c8!important;
     }
@@ -156,7 +156,7 @@ export default function NevigationBar() {
       #navnav{
         background-color: #fff0!important;
         letter-spacing: .02em;
-        font-size: .85em;
+        font-size: .75em;
         text-transform: uppercase;
         transition: 0.5s;
         top: 1.5rem;
@@ -170,7 +170,7 @@ export default function NevigationBar() {
         top: 0;
         transition: 0.5;
       }
-      
+
         .number {
         background-color: #fff;
         padding: .5em .85em .5em .7em;
@@ -181,14 +181,14 @@ export default function NevigationBar() {
         color: rgb(50,58,107);
         transition: .5s;
       }
-      
+
       .number:hover {
           background-color: #fff0;
           border: 1px solid #fff;
           cursor: pointer;
           color: #fff;
       }
-      
+
       .number a {
           color: rgb(50,58,107);
       }
@@ -205,4 +205,3 @@ export default function NevigationBar() {
   </>
    )
 }
-

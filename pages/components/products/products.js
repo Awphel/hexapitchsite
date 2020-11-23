@@ -228,6 +228,9 @@ export default function Products({
     <
     style jsx global > {
       `
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
+
         html,
         body {
 
@@ -370,7 +373,7 @@ export default function Products({
           margin-right: auto;
           margin-left: auto;
           padding: .5em .5em .5em .5em;
-      
+
         }
       `
     } < /style>

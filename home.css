@@ -1,32 +1,47 @@
-/* 
+/*
 Styling for the landing page
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
+
+
+html,
+body {
+
+  font-family: 'Roboto', 'Open Sans', 'Sans-Serif', 'Ubuntu';
+  margin: 0!important;
+  padding: 0!important;
+  overflow-x: hidden;
+  letter-spacing: 0.2em;
+  font-smooth: antialiased;
+  scroll-behaviour: smooth;
+  scroll-snap-type: mandatory;
+  zoom: 100%;
+}
+
+
  .scrollCue {
           color: #6f7c80;
           font-size: .85em;
       }
- 
+
  h1 {
         font-family: 'Open Sans';
-        color: rgb(50,58,107);
+        color: #ffffff;
         margin-bottom: .150em;
         padding-bottom: 0;
         line-height: 1em;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 3em;
-      }
-      
-     
-      h4 {
-        margin-bottom: 2em;
-        word-spacing: .15em;
-        font-size: .765em;
-        color: #808080;
       }
 
       #introText {
-        width: 28em;
-        margin-top: 2em;
+        width: 40em;
+        color: #ffffff;
+        margin-top: 3.5em;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       p {
@@ -40,23 +55,12 @@ Styling for the landing page
       }
 
       .btn:hover {
-        color: #48c2c8;;
+        color: #48c2c8;
       }
 
-      .supplierbtn {
-        color: #fff;
-        width: 8em;
-        transition: .5s;
-        margin-right: 1.5em;
-        border-radius: 3em;
-        border: 1px solid #48c2c8;
-        background-color: #48c2c8;
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
-      }
-      
       .buyerbtn {
           color: #fff;
-          width: 8em;
+          width: 12em;
           transition: .5s;
           margin-right: 1.5em;
           border-radius: 3em;
@@ -64,7 +68,7 @@ Styling for the landing page
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
       }
 
-      .buyerbtn:hover, .supplierbtn:hover {
+      .buyerbtn:hover {
         border: 1px solid rgb(50,58,107);
         background-color: #fff;
         color: rgb(50,58,107);
@@ -74,10 +78,6 @@ Styling for the landing page
       .inlineCTA {
         margin-top: 3.5em;
       }
-
-      .header_animation {
-        height: 30em;
-   }
 
       #logo_sm {
         margin-left: 2.5em;
@@ -105,7 +105,8 @@ Styling for the landing page
       }
 
       .header {
-        background-image: url("/head_image.png");
+        background: rgb(26,41,128);
+        background: linear-gradient(290deg, rgba(26,41,128,1) 0%, rgba(38,160,218,1) 100%);
         background-position: right;
         background-size: cover;
         min-width: 100%!important;
@@ -116,78 +117,12 @@ Styling for the landing page
       }
 
       .intro {
-        margin-left: 5em;
+
         margin-top: 15%;
-        padding-right: 15em;
+        text-align: center;
       }
       .header_image {
         align-content: center;
         text-align: center;
         margin-top: 8%;
       }
-
-      .header-down-arrow {
-      animation: pulse 2s 3s ease-out infinite;
-      position: absolute;
-        bottom: 5vh;
-        left: 0;
-        right: 0;
-      text-align: center;
-      z-index: 10;
-      }
-
-      .header-down-arrow img {
-      animation: fade-slide-up 1s 1s ease-out forwards;
-      opacity: 0;
-      }
-
-      /* Animations */
-
-      @keyframes fade-slide-down {
-      0% {
-      opacity: 0;
-      transform: translateY(-4rem);
-      }
-      100% {
-      opacity: 1;
-      transform: none;
-      }
-      }
-
-      @keyframes fade-slide-up {
-      0% {
-      opacity: 0;
-      transform: translateY(4rem);
-      }
-      100% {
-      opacity: 1;
-      transform: none;
-      }
-      }
-
-      @keyframes pop-in {
-      0% {
-      opacity: 0;
-      transform: translateY(-4rem) scale(.8);
-      }
-      100% {
-      opacity: 1;
-      transform: none;
-      }
-      }
-
-      @keyframes pulse {
-      0% {
-      opacity: 1;
-      transform: none;
-      }
-      50% {
-      opacity: .8;
-      transform: scale(.8);
-      }
-      100% {
-      opacity: 1;
-      transform: none;
-      }
-      }
-

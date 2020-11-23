@@ -45,4 +45,3 @@ function navmorph() {
     bar.style.top = '1.5rem';
   }
 }
-

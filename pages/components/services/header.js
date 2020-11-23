@@ -8,11 +8,11 @@ export default function ServicesHeader() {
     <
     div className = "col-sm intro" >
     <
-    h1 > Our < font color = "#48c2c8" > Services< /font>< /h1 >
-    
+    h1 > Our Services< /h1 >
+
     <h3> We're commited</h3>
     <p> From start to finish - <font color="#888" >we put your needs first!</font></p>
-    
+
     {/* Secondary Nevigation buttons */}
     <p className="secondaryNAV">
     <ul className="breadcrumbs">
@@ -26,10 +26,10 @@ export default function ServicesHeader() {
     </p>
 
      < /
-    div > 
+    div >
     < /
     div >
-    
+
     {/* Scroll Down Cue **/}
     <
     section className = "header-down-arrow" >
@@ -40,49 +40,49 @@ export default function ServicesHeader() {
     width = "30" / ></a>
     <
     /section>
-    
+
     <
     /div>
 
     <
     style jsx global> {
       `
-      
+
       .breadcrumbs {
           color: #888;
           margin: 0;
           padding: 0;
-        
+
       }
-      
+
       .breadcrumbs_list {
           float: left;
           margin: 1em;
       }
-      
+
       .scrollCue {
           color: #6f7c80;
           font-size: .85em;
       }
-      
+
       .secondaryNAV {
           margin-top: 5em;
           font-size: .8em;
       }
-      
+
       .secondaryNAV-LINKS {
           transition: .5s;
           padding-left: .5em;
           padding-right: .5em;
           color: #48c2c8;
       }
-      
+
       .secondaryNAV-LINKS:hover {
           color: grey;
           font-size: 1.2em;
           text-decoration: none!important;
       }
-      
+
       h1 {
         font-family: 'Open Sans';
         color: rgb(50,58,107);
@@ -92,12 +92,12 @@ export default function ServicesHeader() {
         font-weight: 550;
         font-size: 3em;
       }
-      
+
       h3 {
           margin-bottom: .5em;
           margin-top: 2em;
       }
-      
+
       h4 {
         margin-bottom: 2em;
         word-spacing: .15em;
@@ -110,7 +110,7 @@ export default function ServicesHeader() {
         word-spacing: .15em;
       }
 
-      
+
       .secondary_icons {
         margin-right: .5em;
         margin-left: .3em;
@@ -153,7 +153,7 @@ export default function ServicesHeader() {
         text-align: center;
         margin-top: 8%;
       }
-      
+
       .textLINK_MORE {
         color: rgb(257,29,95);
         text-decoration: none;

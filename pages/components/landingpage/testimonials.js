@@ -14,21 +14,21 @@ export default function LandingTestimonials() {
     the price we pay. Thank you Hexa!”</i>.
         </p>
 
-<a className="btn secondaryCTA" href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" > Make an enquiry </a> 
+<a className="btn secondaryCTA" href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" > Make an enquiry </a>
       </div>
      </div>
-     
+
      <
     style jsx global > {
       `
-      
+
       .testiIMAGE {
           width: 8em;
           margin-bottom: 2em;
           margin-top: 2.65em;
           border-radius: 5em;
       }
-      
+
       .TESTtext {
         width: 55em;
         color: #888;
@@ -36,7 +36,7 @@ export default function LandingTestimonials() {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .Landing_testimonials {
         width: 100%!important;
         padding: 8em .5em 3em .5em;
@@ -48,8 +48,9 @@ export default function LandingTestimonials() {
         margin-top: 3em;
         overflow-x: hidden;
       }
-      
+
       .Landing_testimonials h1 {
+        font-variant-caps: all-small-caps;
         font-family: 'Open Sans';
         color: rgb(50,58,107);
         margin-bottom: .5em;
@@ -58,7 +59,7 @@ export default function LandingTestimonials() {
         font-weight: 550;
         font-size: 2em;
       }
-      
+
        `
     } < /style>
  </>

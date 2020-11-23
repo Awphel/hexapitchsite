@@ -16,20 +16,19 @@ export default function Quality() {
             </p>
 
         </div>
-        
-        
-        
+
+
+
         <div id="payment" className="col-6">
-            <h3></h3>
             <p className="Col_text_right">
                 <i>"Quality is never an accident, it is always the result of high intention, sincere effort, intelligent direction and skillful execution; it represents the wise choice fo many alternatives"</i> William A.
             </p>
         </div>
-    
+
     <
     /div>
-    
-    
+
+
      <
     style jsx global > {
       `
@@ -37,7 +36,7 @@ export default function Quality() {
           height: inherit;
           padding: 7.5em 3em 0 5em;
       }
-      
+
       .Col_text_left {
           font-size: .85em;
           line-height: 2em;
@@ -45,7 +44,7 @@ export default function Quality() {
           line-height: 2.5em;
           border-left: .3em solid #f2f2f2;
           }
-      
+
       .Col_text_right {
             color: #888;
           font-size: .85em;
@@ -54,21 +53,25 @@ export default function Quality() {
           line-height: 2.5em;
           border-left: .3em solid #f2f2f2;
       }
-      
+
       .about {
           height: inherit;
           margin-top: 2em;
           background-color: #fff;
           scroll-snap-align: start;
       }
-      
+
+      .about h1 {
+          font-variant-caps: all-small-caps;
+      }
+
       .col-6 h3 {
           margin-bottom: .65em;
           color: rgb(50,58,107);
           font-size: 1.5em;
           margin-top: 0;
       }
-      
+
       .secondaryCTA {
           color: #fff;
           border-radius: 3em;
@@ -78,7 +81,7 @@ export default function Quality() {
           background-color: rgb(50,58,107);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
       }
-      
+
       .secondaryCTA:hover {
         color: #fff;
         background-color: #48c2c8;

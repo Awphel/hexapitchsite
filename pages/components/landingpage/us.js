@@ -5,7 +5,7 @@ export default function LandingUS () {
     <
     div id="landingUS" className = "row Landing_us" >
       <div className="col-12">
-        <h1>From start to <font color = "#48c2c8" >finish</font></h1>
+        <h1>From start to finish</h1>
         <div className="row">
         <div className="col usText">
             <p className="Text">Even before the pandemic, getting access to reliable medical
@@ -21,16 +21,16 @@ export default function LandingUS () {
             <p>
             <a type="button" href="/components/about/about-us" className ="btn secondaryCTA">Get to Know Us</a>
                 <a href="#" type="button" className ="btn primaryCTA" href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" >Make an Enquiry</a>
-            </p>   
+            </p>
         </div>
         <div className="col">
             <img src="/doctor.png" className="sectionIMAGE"/>
         </div>
     </div>
-        
+
       </div>
      </div>
-     
+
      <
     style jsx global > {
       `
@@ -39,7 +39,7 @@ export default function LandingUS () {
           padding: 2.5em 10em 0 0.5em;
           margin-left: .5em;
       }
-      
+
       .Landing_us {
           background: linear-gradient(180deg, rgba(72,194,200, .1) 0%, rgba(237,29,95,0) 100%);
          width: 100%!important;
@@ -48,34 +48,25 @@ export default function LandingUS () {
         overflow-y: hidden;
         height: 100vh;
       }
-      
+
       .Landing_us h1 {
           font-size: 2em;
+          color:rgb(50,58,107);
           font-weight: 550;
           font-family: 'Open Sans';
+          font-variant-caps: all-small-caps;
       }
-      
+
       .Text {
           border-left: .3em solid #f2f2f2;
           padding-left: 1em;
       }
-      
+
       .sectionIMAGE{
           width: 18em;
           margin-top: .5em;
           margin-left: 2.5em;
       }
-      
-      .secondaryCTA {
-          color: #fff;
-          border-radius: 3em;
-          margin: 1.85em 0 .3em 1.5em;
-          text-transform: uppercase;
-          padding: .5em 1.5em .5em 1.5em;
-          background-color: rgb(257,29,95);
-          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
-      }
-      
        `
     } < /style>
  </>

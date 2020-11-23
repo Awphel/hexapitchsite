@@ -65,6 +65,7 @@ export default function WhyweExist() {
           color: #fff;
           font-size: 3em;
           margin-bottom: .5em;
+          font-variant-caps: all-small-caps;
       }
 
       .col-6 h3 {

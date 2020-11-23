@@ -8,7 +8,7 @@ export default function AboutHeader() {
     <
     div className = "col-sm intro" >
     <
-    h1 > About< font color = "#48c2c8" > Us< /font>< /h1 >
+    h1 > About Us< /h1 >
 
     <h3> We're passionate</h3>
     <p>  about redressing the imbalance in the medical supply chain.</p>

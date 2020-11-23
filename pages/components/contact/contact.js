@@ -23,15 +23,15 @@ export default function ServicesMain() {
 
     <
     /Head>
-    
+
     {/* Nevigation Starts */}
         <
         NevigationBar />
         <
-        ContactHeader /> 
+        ContactHeader />
 
     <
-    
+
     script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossOrigin = "anonymous" > < /script> <
@@ -48,18 +48,22 @@ export default function ServicesMain() {
     script type = "text/javascript" >
     window.onscroll = navmorph; <
     /script>
-    
+
 
     <
     script type = "text/javasrcript"
     src ="/typeform.js" ></script>
-    
+
     <
     style jsx global > {
       `
+
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
+
         html,
         body {
-          background-color: 
+          background-color:
           font-family: 'Open Sans',
             Oxygen, Ubuntu;
           margin: 0!important;
@@ -71,7 +75,7 @@ export default function ServicesMain() {
           scroll-snap-type: mandatory;
           zoom: 100%;
         }
-        
+
         .container {
             margin: 0!important;
             width: 100%!important;
