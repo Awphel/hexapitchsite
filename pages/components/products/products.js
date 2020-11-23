@@ -5,9 +5,7 @@ import NevigationBar from '../nevigation/nevigation.js';
 import Policy from "../privacy policy/policy.js";
 import Footer from '../footer/footer.js';
 import ProductsHeader from '../products/header.js';
-import {allProducts_1} from '../products/script.js';
-import {allProducts_2} from '../products/script.js';
-import {togglePPE} from '../products/script.js';
+
 import {
   connectToDatabase
 } from "../../../util/mongodb";
@@ -51,12 +49,12 @@ export default function Products({
     div className = "row showcase_window" >
     <div className="tertiary_NAV">
     {/* Secondary Nevigation buttons */}
-        <a onClick={() => togglePPE('PPE')} className="tertiaryButton">PPE</a>
+        <a onClick={() => togglePPE()} className="tertiaryButton">PPE</a>
         <a onClick={() => allProducts()} className="tertiaryButton">MEDICAL</a>
         <a onClick={() => allProducts()} className="tertiaryButton ">PHARMACEUTICAL</a>
     </div>
-    <div className="col-12 notifications">
-    <ul id="ppeOptions" className="ppeOptions">
+    <div className="col-12">
+    <ul id="ppeOptions" className="ppeOptions_CLOSED">
       <li className="optionsList">
         <a className="optionsLink" onClick={() => allProducts_1('Respiratory')} >
           Respiratory</a>
@@ -77,6 +75,8 @@ export default function Products({
         </a>
       </li>
     </ul>
+    </div>
+    <div className="col-12 notifications">
       <h5 id="thehead"><b>Showing:</b> Random PPE Products </h5>
     </div>
 
@@ -335,10 +335,16 @@ export default function Products({
           font-size: .85em
         }
 
-        .ppeOptions {
+        .ppeOptions_CLOSED {
           list-style-type:none;
           visibility: hidden;
           height: 0;
+        }
+
+        .ppeOptions_OPEN{
+          list-style-type:none;
+          visibility: visible;
+          height: auto;
         }
 
         .optionsList {
@@ -357,6 +363,12 @@ export default function Products({
         .optionsLink {
           display: inline-block;
         }
+
+        .notifications {
+          border-bottom: 1px solid #c6c6c6;
+          padding: .5em;
+          text-align: left;
+        }
       `
     } < /style>
 
@@ -365,6 +377,7 @@ export default function Products({
   )
 }
 
+//Function for fetching data from mongodb PPE Product list
 export async function getServerSideProps() {
   const {
             db
@@ -379,4 +392,80 @@ export async function getServerSideProps() {
               ppeProductListings: JSON.parse(JSON.stringify(ppeProductListings)),
     },
   };
+}
+
+//This function toggles the PPE menu
+export function togglePPE() {
+  var ppeNevigation = document.getElementById("ppeOptions");
+  if(ppeNevigation.className === 'ppeOptions_CLOSED'){
+      ppeNevigation.className = 'ppeOptions_OPEN';
+    } else {
+      ppeNevigation.className = 'ppeOptions_CLOSED';
+    }
+}
+
+//Toggles between PPE gategories
+export function allProducts_1(wanted) {
+
+global.$productCategory = "";
+var div1 = document.getElementById("RandomProducts");
+var div2 = document.getElementById("Respirators");
+var div3 = document.getElementById("Face");
+var div4 = document.getElementById("Hand");
+var div5 = document.getElementById("Clothing");
+var section = document.getElementById("thehead");
+var ppeNevigation = document.getElementById("ppeOptions");
+
+
+if(wanted == 'Respiratory'){
+      var productCategory = wanted;
+      section.innerHTML = "<b>Showing:</b> Respirators & Face Masks";
+      div1.style.cssText += "visibility: hidden; height: 0;"
+      div3.style.cssText += "visibility: hidden; height: 0;"
+      div4.style.cssText += "visibility: hidden; height: 0;"
+      div5.style.cssText += "visibility: hidden; height: 0;"
+      div2.style.cssText += "visibility: visible; height: auto;"
+  }
+    else if (wanted == 'Face'){
+      var productCategory = wanted;
+      section.innerHTML = "<b>Showing:</b> Visors & Faceshields ";
+      div1.style.cssText += "visibility: hidden; height: 0;"
+      div3.style.cssText += "visibility: visible; height: auto;"
+      div4.style.cssText += "visibility: hidden; height: 0;"
+      div5.style.cssText += "visibility: hidden; height: 0;"
+      div2.style.cssText += "visibility: hidden; height: 0;"
+    }
+}
+
+//Toggles between PPE gategories
+export function allProducts_2(wanted) {
+
+global.$productCategory = "";
+var div1 = document.getElementById("RandomProducts");
+var div2 = document.getElementById("Respirators");
+var div3 = document.getElementById("Face");
+var div4 = document.getElementById("Hand");
+var div5 = document.getElementById("Clothing");
+var section = document.getElementById("thehead");
+var ppeNevigation = document.getElementById("ppeOptions");
+
+
+if(wanted == 'Clothing'){
+      var productCategory = wanted;
+      section.innerHTML = "<b>Showing:</b> Protective Clothing ";
+      div1.style.cssText += "visibility: hidden; height: 0;"
+      div3.style.cssText += "visibility: hidden; height: 0;"
+      div4.style.cssText += "visibility: hidden; height: 0;"
+      div5.style.cssText += "visibility: visible; height: auto;"
+      div2.style.cssText += "visibility: hidden; height: 0;"
+  }
+    else if (wanted == 'Hand'){
+      var productCategory = wanted;
+      section.innerHTML = "<b>Showing:</b> Hand Protection ";
+      div1.style.cssText += "visibility: hidden; height: 0;"
+      div3.style.cssText += "visibility: hidden; height: 0;"
+      div4.style.cssText += "visibility: visible; height: auto;"
+      div5.style.cssText += "visibility: hidden; height: 0;"
+      div2.style.cssText += "visibility: hidden; height: 0;"
+    }
 }
