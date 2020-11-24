@@ -7,9 +7,9 @@ export default function HomeHeader() {
     <
     div className = "row" >
     <
-    div className = "col-12 intro" >
+    div className = "col-6 intro" >
     <
-    h1 > A NEW KIND OF MEDICAL SUPPLY CHAIN < /h1 >
+    h1 > A NEW KIND OF<br/> MEDICAL SUPPLY<br/> CHAIN < /h1 >
     <
     p id = "introText" >
     The first platform that brings together global supplies, standerdised quality control, and logistics. <

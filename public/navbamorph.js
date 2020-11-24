@@ -2,6 +2,7 @@ function navmorph() {
   var dalink = document.getElementsByClassName('nav-link');
   var progress = document.getElementById("progress-container");
   var navbar = document.getElementById("navnav");
+  var navCTA = document.getElementById("number");
   var Y = window.pageYOffset;
   var W = window.innerWidth;
   var logo_image = document.getElementById("logo_sm");
@@ -25,23 +26,29 @@ function navmorph() {
     navbar.style.cssText += "background-color: #323a6b!important;"
     document.getElementById("myBar").style.width = scrolled + "%";
     progress.style.cssText += "visibility: visible;"
-    logo_image.src = '/Logo_white.webp';
+    logo_image.src = '/Logo_graphic_white.webp';
+    logo_image.className = 'site_logo_2';
+    navCTA.className = 'number_1';
     bar.style.top = '0';
+
   } else if (W < wscreen) {
     navbar.style.cssText += "background-color: #323a6b!important;"
     document.getElementById("myBar").style.width = scrolled + "%";
     progress.style.cssText += "visibility: visible;"
-    logo_image.src = '/Logo_white.webp';
+    logo_image.src = '/Logo_graphic_white.webp';
+    logo_image.className = 'site_logo_2';
+    navCTA.className = 'number_1';
     bar.style.top = '0';
   } else {
     for (i = 0; i < dalink.length; i++) {
-      dalink[i].style.cssText += "color: #fff!important;"
+      dalink[i].style.cssText += "color: #222!important;"
     }
     navbar.style.cssText += "background-color: #fff0!important;"
     document.getElementById("myBar").style.width = scrolled + "%";
     progress.style.cssText += "visibility: hidden;"
-    logo_image.src = '/Logo.webp';
-
+    logo_image.src = '/Logo_white.webp';
+    logo_image.className = 'site_logo_1';
+    navCTA.className = 'number_2';
     bar.style.top = '1.5rem';
   }
 }

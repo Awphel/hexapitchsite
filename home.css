@@ -37,11 +37,9 @@ body {
       }
 
       #introText {
-        width: 40em;
+        width: 30em;
         color: #ffffff;
         margin-top: 3.5em;
-        margin-left: auto;
-        margin-right: auto;
       }
 
       p {
@@ -59,16 +57,16 @@ body {
       }
 
       .buyerbtn {
-          color: #fff;
+          color: rgb(50,58,107);
           width: 12em;
           transition: .5s;
           margin-right: 1.5em;
           border-radius: 3em;
-          background-color: rgb(50,58,107);
+          background-color: #fff;
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
       }
 
-      .buyerbtn:hover {
+      .buyerbtn:hover{
         border: 1px solid rgb(50,58,107);
         background-color: #fff;
         color: rgb(50,58,107);
@@ -92,7 +90,7 @@ body {
 
       .textLINK {
         line-height: 3em;
-        color: rgb(72,194,200);
+        color: #fff;
         text-transform: uppercase;
         text-decoration: none;
         transition: .8s;
@@ -105,8 +103,7 @@ body {
       }
 
       .header {
-        background: rgb(26,41,128);
-        background: linear-gradient(290deg, rgba(26,41,128,1) 0%, rgba(38,160,218,1) 100%);
+        background-image: url("/head_image.png");
         background-position: right;
         background-size: cover;
         min-width: 100%!important;
@@ -119,7 +116,8 @@ body {
       .intro {
 
         margin-top: 15%;
-        text-align: center;
+        margin-left: 4em;
+        text-align: left;
       }
       .header_image {
         align-content: center;

@@ -16,8 +16,7 @@ export default function NevigationBar() {
     <
     img id = "logo_sm"
     src = "/Logo.webp"
-    width = "150em"
-    className = "tooltip-test"
+    className = "site_logo_1"
     title = "Take me home"
     alt = "logo" / >
     <
@@ -38,7 +37,7 @@ export default function NevigationBar() {
     id = "navbarSupportedContent" >
 
     <
-    ul className = "navbar-nav ml-auto" >
+    ul id="Nav-list" className = "navbar-nav ml-auto" >
     <
     li className = "nav-item" >
     <
@@ -85,8 +84,8 @@ export default function NevigationBar() {
     href = "/components/contact/contact" > Contact < /a> < /
     li > <
     /ul> <
-    div className = "number" >
-    <a href="/components/products/products">
+    div id="number" className = "number_1" >
+      <a href="/components/products/products">
      View Products</a>
      <
     /div> < /
@@ -138,11 +137,6 @@ export default function NevigationBar() {
 
       .nav-item {
         margin-right: 1em;
-        color: #fff;
-      }
-
-      .nav-link {
-        color: #fff!important;
       }
 
     .nav-link:hover {
@@ -159,7 +153,8 @@ export default function NevigationBar() {
         font-size: .75em;
         text-transform: uppercase;
         transition: 0.5s;
-        top: 1.5rem;
+        height: 5em;
+        top: 1rem;
         }
 
       .bg-light{
@@ -171,7 +166,7 @@ export default function NevigationBar() {
         transition: 0.5;
       }
 
-        .number {
+        .number_1 {
         background-color: #fff;
         padding: .5em .85em .5em .7em;
         border-radius: 3em;
@@ -182,24 +177,59 @@ export default function NevigationBar() {
         transition: .5s;
       }
 
-      .number:hover {
+      .number_2 {
+      background-color: rgb(50,58,107);
+      padding: .5em .85em .5em .7em;
+      border-radius: 3em;
+      font-weight: 300;
+      margin-left: 1em;
+      margin-right: 2em;
+      transition: .5s;
+    }
+
+      .number_2:hover {
+        color: rgb(50,58,107);
+        background-color: #fff;
+        border: 1px solid rgb(50,58,107)!important;
+      }
+
+      .number_2 a {
+          color: #fff!important;
+      }
+      .number_2 a:hover {
+          color: rgb(50,58,107)!important;
+          text-decoration: none;
+      }
+
+      .number_1:hover {
           background-color: #fff0;
           border: 1px solid #fff;
           cursor: pointer;
-          color: #fff;
+          color: #fff!important;
       }
 
-      .number a {
-          color: rgb(50,58,107);
+      .number_1 a {
+          color: rgb(50,58,107)!important;
       }
-      .number a:hover {
-          color: #fff;
+      .number_1 a:hover {
+          color: #fff!important;
           text-decoration: none;
       }
 
       #logo_sm {
         margin-left: 2.5em;
       }
+
+      .site_logo_1{
+        margin: 2.5em;
+        width: 5.5em;
+      }
+
+      .site_logo_2 {
+        margin: 2.5em;
+        width: 9.5em;
+      }
+
         `
     } < /style>
   </>
