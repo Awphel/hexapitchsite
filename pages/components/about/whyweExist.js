@@ -47,7 +47,7 @@ export default function WhyweExist() {
 
       .about {
           height: 100vh;
-          margin-top: 2em;
+          margin-top: 0em;
           background-color: #fff;
           scroll-snap-align: start;
       }

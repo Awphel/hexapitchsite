@@ -3,7 +3,7 @@ export default function Quality() {
     <>
 
 <
-    div id="quality" className="row about">
+    div id="quality" className="row quality">
         <div className="col-12 section_one">
             <h1>Quality Compliance</h1>
             <p> We integrate quality management with supply chain management..
@@ -54,14 +54,14 @@ export default function Quality() {
           border-left: .3em solid #f2f2f2;
       }
 
-      .about {
+      .quality {
           height: inherit;
-          margin-top: 2em;
+          margin-top: 4em;
           background-color: #fff;
           scroll-snap-align: start;
       }
 
-      .about h1 {
+      .quality h1 {
           font-variant-caps: all-small-caps;
       }
 

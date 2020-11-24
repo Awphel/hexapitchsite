@@ -8,24 +8,24 @@ export default function ContactHeader() {
     <
     div className = "col-sm intro" >
     <
-    h1 > Contact < font color = "#48c2c8" > us< /font>< /h1 >
+    h1 > Contact us< /h1 >
     <span></span>
     <p className="headingText">Head Office (London, United Kingdom)</p>
     <p>Ivybridge House, 1 Adam St<br/>London WC2N, Tel: +44 12 564 345</p>
-    
+
     <hr className="linebreak"/>
-    
+
     <div className="social">
             <i className="fab fa-linkedin-in fa-2x mr-4" />
             <i className="fab fa-twitter fa-2x mr-4" />
             <i className="fab fa-facebook-f fa-2x" />
         </div>
-        
+
      < /
-    div > 
+    div >
     < /
     div >
-    
+
     <
     /div>
 
@@ -36,7 +36,7 @@ export default function ContactHeader() {
           color: #6f7c80;
           font-size: .85em;
       }
-      
+
       .social {
           margin-top: 2em;
       }
@@ -48,12 +48,12 @@ export default function ContactHeader() {
           width: 40%;
           margin: 0;
       }
-      
+
       .secondaryNAV {
           margin-top: 5em;
           font-size: .8em;
       }
-      
+
       .secondaryNAV-LINKS {
           border-right: 1px solid #ccc;
           transition: .5s;
@@ -61,13 +61,13 @@ export default function ContactHeader() {
           padding-right: .5em;
           color: #48c2c8;
       }
-      
+
       .secondaryNAV-LINKS:hover {
           color: grey;
           font-size: 1.2em;
           text-decoration: none!important;
       }
-      
+
       h1 {
         font-family: 'Open Sans';
         color: #fff;
@@ -77,11 +77,11 @@ export default function ContactHeader() {
         font-weight: 550;
         font-size: 3em;
       }
-      
+
       .headingText {
           color: #48c2c8;
       }
-    
+
 
       p {
         color: #fff;
@@ -89,7 +89,7 @@ export default function ContactHeader() {
         word-spacing: .15em;
       }
 
-      
+
       .secondary_icons {
         margin-right: .5em;
         margin-left: .3em;
@@ -127,7 +127,7 @@ export default function ContactHeader() {
         margin-top: 15%;
         padding-right: 15em;
       }
-      
+
       .textLINK_MORE {
         color: rgb(257,29,95);
         text-decoration: none;

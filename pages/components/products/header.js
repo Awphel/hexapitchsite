@@ -42,11 +42,10 @@ export default function ProductsHeader() {
           text-decoration: none!important;
       }
 
-      h1 {
+      .intro h1 {
         font-family: 'Open Sans';
-        color: rgb(50,58,107);
-        margin-bottom: 1em;
-        padding-bottom: 0;
+        color: #fff;
+        padding-bottom: 1em;
         line-height: .7em;
         font-weight: 550;
         font-size: 3em;
@@ -86,7 +85,7 @@ export default function ProductsHeader() {
       }
 
       .header {
-        background-image: url("/head_image_products.png");
+        background-image: url("/head_image.png");
         background-position: right;
         min-width: 100%!important;
         height: 45vh;

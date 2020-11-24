@@ -15,7 +15,7 @@ export default function NevigationBar() {
     href = "/#" >
     <
     img id = "logo_sm"
-    src = "/Logo.webp"
+    src = "/Logo_white.webp"
     className = "site_logo_1"
     title = "Take me home"
     alt = "logo" / >
@@ -147,8 +147,7 @@ export default function NevigationBar() {
         color: #48c2c8!important;
     }
 
-      #navnav{
-        background-color: #fff0!important;
+      #navnav {
         letter-spacing: .02em;
         font-size: .75em;
         text-transform: uppercase;
@@ -157,10 +156,19 @@ export default function NevigationBar() {
         top: 1rem;
         }
 
-      .bg-light{
-        background-color: #fff0!important;
-      }
+        .navnav_Scrolling {
+          letter-spacing: .02em;
+          font-size: .75em;
+          text-transform: uppercase;
+          transition: 0.5s;
+          height: 5em;
+          top: 1rem;
+          }
 
+          .bg-light{
+           background-color: #fff0!important;
+         }
+         
       .fixed-top{
         top: 0;
         transition: 0.5;

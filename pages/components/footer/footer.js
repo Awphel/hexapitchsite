@@ -32,7 +32,7 @@ export default function Footer() {
                 <a href="#" className="navLINKS">Contact</a>
             </li>
         </ul>
-        <div className="copyrightTEXT">All rights reserved Hexa 2020<a type="button" data-toggle="modal" data-target="#policyModal" className="privacyLINK">Privacy policy</a></div>
+        <div className="copyrightTEXT">All rights reserved Hexa 2020<a type="button" data-toggle="modal" data-target="#policyModal" className="privacyLINK"><b>Privacy policy</b></a></div>
         <div className="social_icons">
             <i className="fab fa-linkedin-in fa-2x mr-4" />
             <i className="fab fa-twitter fa-2x mr-4" />
@@ -49,7 +49,7 @@ export default function Footer() {
     style jsx global > {
       `
       .fab{
-          color: #fff;
+          color: #7f7f7f;
           transition: .5s;
       }
 
@@ -60,20 +60,20 @@ export default function Footer() {
       .footer {
         width: 100%;
         height: 50vh;
-        border-top: 1px solid #eaeaea;
-        background-color: rgb(50,58,107);
+        background-color: #fff;
         align-content: center;
+        background-image: url("/footer_background.png");
         text-align: center;
         padding-top: 3em;
       }
 
       .footer p {
-          color: #fff;
+          color: #7f7f7f;
           font-weight: 700;
       }
 
       ul#footer_menu li {
-        color: #fff;
+        color: #7f7f7f;
           display: inline;
           margin-right: 1.5em;
       }
@@ -85,7 +85,7 @@ export default function Footer() {
       }
 
       .navLINKS {
-          color: #fff;
+          color: #7f7f7f;
           font-size: .8em;
       }
 
@@ -106,7 +106,7 @@ export default function Footer() {
       .copyrightTEXT {
             width: 100%;
             height: 10px;
-            color: #fff;
+            color: #7f7f7f;
           bottom: 10%;
           font-size: .7em;
           position: absolute;
@@ -120,7 +120,7 @@ export default function Footer() {
           margin-left: 1em;
       }
       .footer_image {
-        opacity: .1;
+        opacity: 1;
           width: 20em;
           left: 0;
       }

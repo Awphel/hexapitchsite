@@ -23,7 +23,7 @@ function navmorph() {
     for (i = 0; i < dalink.length; i++) {
       dalink[i].style.cssText += "color: #fff!important;"
     }
-    navbar.style.cssText += "background-color: #323a6b!important;"
+    navbar.style.cssText += "background-color: rgba(50,58,107, .8)!important;"
     document.getElementById("myBar").style.width = scrolled + "%";
     progress.style.cssText += "visibility: visible;"
     logo_image.src = '/Logo_graphic_white.webp';
@@ -32,7 +32,7 @@ function navmorph() {
     bar.style.top = '0';
 
   } else if (W < wscreen) {
-    navbar.style.cssText += "background-color: #323a6b!important;"
+    navbar.style.cssText += "background-color: rgba(50,58,107,.8)!important;"
     document.getElementById("myBar").style.width = scrolled + "%";
     progress.style.cssText += "visibility: visible;"
     logo_image.src = '/Logo_graphic_white.webp';

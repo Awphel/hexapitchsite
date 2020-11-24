@@ -49,7 +49,7 @@ export default function Products({
     div className = "row showcase_window" >
     <div className="tertiary_NAV">
     {/* Secondary Nevigation buttons */}
-        <a onClick={() => togglePPE()} className="tertiaryButton">PPE</a>
+        <a onClick={() => togglePPE()} className="tertiaryButton">PPE<i className="fas fa-angle-down ml-2" /></a>
         <a onClick={() => allProducts()} className="tertiaryButton">MEDICAL</a>
         <a onClick={() => allProducts()} className="tertiaryButton ">PHARMACEUTICAL</a>
     </div>
@@ -281,6 +281,7 @@ export default function Products({
           margin: 0.5em 1.5em 0.5em 1.5em;
           backgroud-color: #fff!important;
           font-size: .80em;
+          font-weight: 600;
           color: #323a6b;
         }
 

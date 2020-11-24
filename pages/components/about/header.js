@@ -33,7 +33,7 @@ export default function AboutHeader() {
     <a href="#we_exist">
     <
     img src = "https://cssanimation.rocks/levelup/public/images/downarrow.png"
-    width = "30" / ></a>
+    width = "30" className="scrollCueArrow" / ></a>
     <
     /section>
 
@@ -45,7 +45,7 @@ export default function AboutHeader() {
       `
 
       .breadcrumbs {
-          color: #888;
+          color: #fff;
           margin: 0;
           padding: 0;
 
@@ -65,24 +65,27 @@ export default function AboutHeader() {
           transition: .5s;
           padding-left: .5em;
           padding-right: .5em;
-          color: #48c2c8;
-          display: block;
+          color: #fff;
       }
 
       .secondaryNAV-LINKS:hover {
-          color: grey;
+          color: #48c2c8;
           font-size: 1.2em;
           text-decoration: none!important;
       }
 
       .scrollCue {
-          color: #6f7c80;
+          color: #fff;
           font-size: .85em;
+      }
+
+      .scrollCueArrow {
+        filter: invert(100%);
       }
 
       h1 {
         font-family: 'Open Sans';
-        color: rgb(50,58,107);
+        color: #fff;
         margin-bottom: .150em;
         padding-bottom: 0;
         line-height: .7em;
@@ -93,6 +96,7 @@ export default function AboutHeader() {
       h3 {
           margin-bottom: .5em;
           margin-top: 2em;
+          color: #fff;
       }
 
       h4 {
@@ -107,6 +111,9 @@ export default function AboutHeader() {
         word-spacing: .15em;
       }
 
+      .intro p {
+        color: #fff;
+      }
 
       .secondary_icons {
         margin-right: .5em;
@@ -115,22 +122,13 @@ export default function AboutHeader() {
         width: 1em;
       }
 
-      .textLINK {
-        line-height: 3em;
-        color: rgb(72,194,200);
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: .8s;
-        margin-left: .8em;
-      }
-
       .textLINK:hover {
         color: rgb(50,58,107);
         text-decoration: none!important;
       }
 
       .header {
-        background-image: url("/head_image_about.png");
+        background-image: url("/head_image.png");
         background-position: right;
         background-size: cover;
         min-width: 100%!important;
@@ -144,17 +142,6 @@ export default function AboutHeader() {
         margin-left: 5em;
         margin-top: 15%;
         padding-right: 15em;
-      }
-      .header_image {
-        align-content: center;
-        text-align: center;
-        margin-top: 8%;
-      }
-
-      .textLINK_MORE {
-        color: rgb(257,29,95);
-        text-decoration: none;
-        transition: .8s;
       }
 
       .header-down-arrow {
