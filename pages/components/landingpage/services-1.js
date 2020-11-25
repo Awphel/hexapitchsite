@@ -82,7 +82,7 @@ export default function LandingServices() {
           margin-left: auto;
           margin-right: auto;
           margin-top: 2em;
-          width: 25em;
+          width: 100%;
           height: 15em;
       }
 
