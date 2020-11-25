@@ -192,6 +192,7 @@ export default function LandingServices() {
         }
         .sectionIMAGE_services {
           width: 108%;
+          padding-left: .1em;
         }
         #imageText li a {
           font-size: .65em;
