@@ -177,12 +177,12 @@ export default function NevigationBar() {
         .number_1 {
         background-color: #fff0;
         padding: .5em .85em .5em .7em;
-        border: 1px solid rgb(50,58,107);
+        border: 1px solid #FFF;
         border-radius: 3em;
         font-weight: 300;
         margin-left: 1em;
         margin-right: 2em;
-        color: rgb(50,58,107);
+        color: #FFF;
         transition: .5s;
       }
 
@@ -218,7 +218,7 @@ export default function NevigationBar() {
       }
 
       .number_1 a {
-          color: rgb(50,58,107)!important;
+          color: #FFF!important;
       }
       .number_1 a:hover {
           color: #fff!important;
@@ -245,6 +245,10 @@ export default function NevigationBar() {
       #navnav {
         height: 6em!important;
       }
+      #logo_sm {
+        margin-left: .5em;
+      }
+
       .site_logo_1{
         margin: .5em;
       }

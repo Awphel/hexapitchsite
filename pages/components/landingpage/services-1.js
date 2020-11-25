@@ -182,13 +182,18 @@ export default function LandingServices() {
         .mainText {
           width: auto;
         }
+        .primaryCTA, .secondaryCTA {
+          margin: left: 0;
+        }
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 411px) {
         .Landing_Services {
           height:
         }
         .sectionIMAGE_services {
-        
+          width: 100%;
+        }
+        .imageText {
         }
 
 }
