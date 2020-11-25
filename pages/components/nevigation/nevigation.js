@@ -168,15 +168,16 @@ export default function NevigationBar() {
           .bg-light{
            background-color: #fff0!important;
          }
-         
+
       .fixed-top{
         top: 0;
         transition: 0.5;
       }
 
         .number_1 {
-        background-color: #fff;
+        background-color: #fff0;
         padding: .5em .85em .5em .7em;
+        border: 1px solid rgb(50,58,107);
         border-radius: 3em;
         font-weight: 300;
         margin-left: 1em;
@@ -237,7 +238,40 @@ export default function NevigationBar() {
         margin: 2.5em;
         width: 9.5em;
       }
-
+@media only screen and (max-width: 990px) {
+      #progress-container {
+        visibility: hidden!important;
+      }
+      #navnav {
+        height: 6em!important;
+      }
+      .site_logo_1{
+        margin: .5em;
+      }
+      .site_logo_2{
+        margin: .5em;
+      }
+      #navbarSupportedContent {
+        background-color: rgba(50, 58, 107, 0.8) !important;
+        border-radius: .5em;
+        margin-top: 2em;
+        padding: 1.5em;
+      }
+      .number_1 {
+      background-color: #fff;
+      padding: .5em .85em .5em .7em;
+      border: 1px solid rgb(50,58,107);
+      border-radius: 3em;
+      font-weight: 300;
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-top: .5em;
+      margin-bottom: 1em;
+      color: rgb(50,58,107);
+      text-align: center;
+      transition: .5s;
+    }
+}
         `
     } < /style>
   </>

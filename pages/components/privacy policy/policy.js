@@ -2,7 +2,7 @@
 export default function Policy() {
   return (
   <>
-    
+
 <div className="modal fade" id="policyModal" tabindex="-1" role="dialog" aria-labelledby="policyModalLabel" aria-hidden="true">
   <div className="modal-dialog" role="document">
     <div className="modal-content">
@@ -89,12 +89,14 @@ address you have provided us, or by placing a prominent notice on our website.</
     </div>
   </div>
 </div>
-  
+
   <
     style jsx global > {
+
       `
        .modal-body p {
            font-size: .8em;
+           color: #222!important;
        }
       `
     } < /style>

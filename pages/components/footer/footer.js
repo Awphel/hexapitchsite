@@ -63,7 +63,9 @@ export default function Footer() {
         background-color: #fff;
         align-content: center;
         background-image: url("/footer_background.png");
+        background-repeat: none;
         text-align: center;
+
         padding-top: 3em;
       }
 
@@ -120,10 +122,34 @@ export default function Footer() {
           margin-left: 1em;
       }
       .footer_image {
-        opacity: 1;
+          opacity: 1;
           width: 20em;
           left: 0;
       }
+
+      @media only screen and (max-width: 1024px) {
+          .footer {
+            height: 50vh;
+          }
+      }
+
+      @media only screen and (max-width: 768px) {
+          .footer_logo{
+            visibility: hidden;
+          }
+          .footer {
+            height: 35vh;
+          }
+          .social_icons {
+            left: 40%;
+            margin-top: 1em;
+          }
+      }
+
+      @media only screen and (max-width: 1410px) {
+          .footer {
+            height: 50vh;
+          }
       `
     } < /style>
     <

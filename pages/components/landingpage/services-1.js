@@ -3,12 +3,8 @@ export default function LandingServices() {
     <>
     <
     div id="landingServices" className = "row Landing_Services" >
-      <div className="col-12">
-        <h1>An Integrated Service</h1>
-      </div>
-
-
-        <div className="col-12">
+        <div className="col-12 sectionImage_container">
+            <h1>An Integrated Service</h1>
             <div className="sectionIMAGE_services">
                 <ul id="imageText">
                     <li><a href="/components/services/services/#supplyChain">Supply Chain Management</a></li>
@@ -145,8 +141,7 @@ export default function LandingServices() {
         font-variant-caps: all-small-caps;
         font-family: 'Open Sans';
         color: rgb(50,58,107);
-        margin-bottom: .5em;
-        padding-bottom: 0;
+        padding-bottom: 1em;
         line-height: .8em;
         font-weight: 550;
         font-size: 2em;
@@ -162,7 +157,7 @@ export default function LandingServices() {
 
       .Landing_Services {
         width: 100%!important;
-        padding: 8em .5em 3em .5em;
+        padding: 5em .5em 3em .5em;
         text-align: center;
         overflow-y: hidden;
         height: 110vh;
@@ -172,6 +167,23 @@ export default function LandingServices() {
         margin-top: 3em;
         overflow-x: hidden;
       }
+
+@media only screen and (max-width: 1024px) {
+        .sectionTitle {
+          height: 6em!important;
+          margin: 0;
+        }
+        .sectionImage_container {
+          margin: 0;
+        }
+        .Landing_Services {
+          margin-top: 0;
+        }
+        .mainText {
+          width: auto;
+        }
+}
+
       `
     } < /style>
     </>

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import HomeHeader from './components/landingpage/homeheader.js';
 import HomeHeader_1 from './components/landingpage/homeheader_1.js';
 import Footer from './components/footer/footer.js';
 import LandingServices from './components/landingpage/services-1.js';

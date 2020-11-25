@@ -42,11 +42,12 @@ export default function LandingUS () {
 
       .Landing_us {
           background: linear-gradient(180deg, rgba(72,194,200, .1) 0%, rgba(237,29,95,0) 100%);
-         width: 100%!important;
-        padding: 8em .5em 3em 4em;
-        text-align: left;
-        overflow-y: hidden;
-        height: 100vh;
+          width: 100%!important;
+          padding: 8em .5em 3em 4em;
+          text-align: left;
+          overflow-y: hidden;
+          height: 100vh;
+          margin: 0;
       }
 
       .Landing_us h1 {
@@ -67,6 +68,21 @@ export default function LandingUS () {
           margin-top: .5em;
           margin-left: 2.5em;
       }
+
+@media only screen and (max-width: 1024px) {
+          .usText {
+            padding-right: 1em;
+          }
+          .Landing_us {
+            padding-left: .5em;
+            padding-left: .5em;
+          }
+          .primaryCTA, .secondaryCTA {
+            float: left;
+            margin-left: .5em;
+            width: 100%;
+          }
+}
        `
     } < /style>
  </>
