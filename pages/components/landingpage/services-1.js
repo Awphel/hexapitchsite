@@ -191,7 +191,7 @@ export default function LandingServices() {
           height:
         }
         .sectionIMAGE_services {
-          width: 100%;
+          width: 108%;
         }
         .imageText {
         }
