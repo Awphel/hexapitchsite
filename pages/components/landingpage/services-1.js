@@ -160,7 +160,7 @@ export default function LandingServices() {
         padding: 5em .5em 3em .5em;
         text-align: center;
         overflow-y: hidden;
-        height: 110vh;
+        height: 120vh;
         left: 0;
         margin-left: 0;
         margin-right: 0;
@@ -182,6 +182,12 @@ export default function LandingServices() {
         .mainText {
           width: auto;
         }
+}
+@media only screen and (max-width: 410px) {
+        Landing_Services {
+          height:
+        }
+
 }
 
       `

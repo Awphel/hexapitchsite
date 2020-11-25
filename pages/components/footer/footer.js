@@ -146,9 +146,9 @@ export default function Footer() {
           }
       }
 
-      @media only screen and (max-width: 1410px) {
+      @media only screen and (max-width: 411px) {
           .footer {
-            height: 50vh;
+            height: 40vh;
           }
       `
     } < /style>
