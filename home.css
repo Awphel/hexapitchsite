@@ -148,6 +148,12 @@ body {
     }
     .buyerbtn {
       width: 90%;
+      margin-right: .5em;
+      margin-left: .5em;
+    }
+    .textLINK {
+      margin-left: auto;
+      margin-right: auto;
     }
     #introText {
       width: auto;

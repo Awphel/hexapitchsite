@@ -138,7 +138,7 @@ export default function Footer() {
             visibility: hidden;
           }
           .footer {
-            height: 35vh;
+            height: 30vh;
           }
           .social_icons {
             left: 40%;

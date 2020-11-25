@@ -82,7 +82,7 @@ export default function LandingServices() {
           margin-left: auto;
           margin-right: auto;
           margin-top: 2em;
-          width: 100%;
+          width: 25em;
           height: 15em;
       }
 
@@ -184,8 +184,11 @@ export default function LandingServices() {
         }
 }
 @media only screen and (max-width: 410px) {
-        Landing_Services {
+        .Landing_Services {
           height:
+        }
+        .sectionIMAGE_services {
+        
         }
 
 }
