@@ -4,7 +4,7 @@ export default function LandingUS () {
     <>
     <
     div id="landingUS" className = "row Landing_us" >
-      <div className="col-12">
+      <div className="col-12 inner_container">
         <h1>From start to finish</h1>
         <div className="row">
         <div className="col usText">
@@ -26,8 +26,15 @@ export default function LandingUS () {
         <div className="col">
             <img src="/doctor.png" className="sectionIMAGE"/>
         </div>
-    </div>
-
+        </div>
+      </div>
+      <div className="col-12 affiliates">
+          <h1>SOME OF OUR TRUSTED AFFILIATES</h1>
+          <img src="/uk2a.jpg" className="affiliate_logo" />
+          <img src="/uk1.jpg" className="affiliate_logo" />
+          <img src="/uk1.png" className="affiliate_logo" />
+          <img src="/aus.png" className="affiliate_logo" />
+          <img src="/usa1.png" className="affiliate_logo" />
       </div>
      </div>
 
@@ -43,13 +50,35 @@ export default function LandingUS () {
       .Landing_us {
           background: linear-gradient(180deg, rgba(72,194,200, .1) 0%, rgba(237,29,95,0) 100%);
           width: 100%!important;
-          padding: 8em .5em 3em 4em;
           text-align: left;
-          overflow-y: hidden;
-          height: 100vh;
+          height: auto;
           margin: 0;
       }
 
+      .inner_container {
+        padding-top: 6.5em;
+        padding-left: 5em;
+      }
+
+      .affiliates {
+        height: auto;
+        padding: 1.5em;
+        margin-top: 6em;
+        margin-bottom: 4em;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%!important;
+        text-align: center;
+        background-color: #f0f0f1;
+      }
+      .affiliate_logo {
+        display: inline-block;
+        width: 10em;
+        opacity: .6;
+        margin-top: 2.5em;
+        marin-right: 3em;
+        margin-left: 3em;
+      }
       .Landing_us h1 {
           font-size: 2em;
           color:rgb(50,58,107);
@@ -76,12 +105,32 @@ export default function LandingUS () {
           .Landing_us {
             padding-left: .5em;
             padding-left: .5em;
+            height: auto;
           }
           .primaryCTA, .secondaryCTA {
             float: left;
             margin-left: .5em;
             width: 100%;
           }
+}
+
+@media only screen and (max-width: 411px) {
+            .affiliates {
+              visibility: hidden;
+              margin: 0;
+            }
+            .Landing_us {
+              height: 170vh;
+              margin-bottom: 0;
+            }
+            .inner_container {
+              padding-left: 0;
+              text-align: center;
+            }
+            .usText {
+              text-align: center;
+            }
+
 }
        `
     } < /style>

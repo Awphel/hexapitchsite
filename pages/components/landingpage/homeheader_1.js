@@ -21,7 +21,7 @@ export default function HomeHeader() {
     className = "btn buyerbtn" href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" > Let's start < /a>
 
     <
-    a href = "#landingServices" className = "textLINK"> or learn more <i className="fas fa-angle-down" />< /a>
+    a href = "#landingServices" className = "textLINK"> or learn more <img src="/icons/angle-down-solid.svg" className="fontAwesome-caret" alt="caret"/>< /a>
     <
     /
     p >

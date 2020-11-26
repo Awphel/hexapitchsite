@@ -34,9 +34,9 @@ export default function Footer() {
         </ul>
         <div className="copyrightTEXT">All rights reserved Hexa 2020<a type="button" data-toggle="modal" data-target="#policyModal" className="privacyLINK"><b>Privacy policy</b></a></div>
         <div className="social_icons">
-            <i className="fab fa-linkedin-in fa-2x mr-4" />
-            <i className="fab fa-twitter fa-2x mr-4" />
-            <i className="fab fa-facebook-f fa-2x" />
+            <img src="/icons/linkedin-in-brands.svg" className="fontAwesome-footer-icons" />
+            <img src="/icons/facebook-f-brands.svg" className="fontAwesome-facebook-icon" />
+            <img src="/icons/twitter-brands.svg" className="fontAwesome-footer-icons" />
         </div>
         <div className="footer_logo">
             <img src="/Logo_white.webp" className="footer_image" />
@@ -48,13 +48,22 @@ export default function Footer() {
     <
     style jsx global > {
       `
-      .fab{
-          color: #7f7f7f;
-          transition: .5s;
+      .fontAwesome-footer-icons {
+        width: 1.5em;
+        margin-left: 2em;
+        transition: .5s;
+        opacity: .5;
+
+      }
+      .fontAwesome-facebook-icon {
+        width: .85em;
+        margin-left: 2em;
+        transition: .5s;
+        opacity: .5;
       }
 
-      .fab:hover {
-          opacity: .5;
+      .fontAwesome-footer-icons:hover, .fontAwesome-facebook-icon:hover{
+        opacity: .2;
       }
 
       .footer {
@@ -65,13 +74,19 @@ export default function Footer() {
         background-image: url("/footer_background.png");
         background-repeat: none;
         text-align: center;
-
         padding-top: 3em;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       .footer p {
           color: #7f7f7f;
           font-weight: 700;
+      }
+
+      #footer_menu {
+        margin-left: auto;
+        margin-right: auto;
       }
 
       ul#footer_menu li {
@@ -112,9 +127,6 @@ export default function Footer() {
           bottom: 10%;
           font-size: .7em;
           position: absolute;
-          margin-left: auto;
-          margin-right: auto;
-          border: 1px solide #fff;
       }
 
       .footer_logo {
@@ -149,6 +161,14 @@ export default function Footer() {
       @media only screen and (max-width: 411px) {
           .footer {
             height: 40vh;
+            padding-left: 0;
+            padding-right: 0;
+          }
+          #footer_menu {
+            padding-left: 0;
+          }
+          .social_icons {
+            left: 30%;
           }
       `
     } < /style>

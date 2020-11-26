@@ -25,6 +25,10 @@ body {
           color: #6f7c80;
           font-size: .85em;
       }
+ .fontAwesome-caret {
+   width: .6em;
+   filter: invert(100%);
+ }
 
  h1 {
         font-family: 'Open Sans';

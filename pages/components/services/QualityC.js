@@ -9,7 +9,7 @@ export default function Quality() {
             <p> We integrate quality management with supply chain management..
             </p>
         </div>
-        <div id="sourcing" className="col-6">
+        <div id="sourcing" className="col">
             <h3>Sourcing</h3>
             <p className="Col_text_left">
                 At Hexa, we manage the quality control of every product as well as the Quality Management Standards of the associated manufacturing environment, establishing a high level of regulatory compliance. And for those manufacturers that are not qualified for testing standards, we are here to help assist them through every step in the process of becoming certified to healthcare standards.
@@ -19,7 +19,7 @@ export default function Quality() {
 
 
 
-        <div id="payment" className="col-6">
+        <div id="payment" className="col">
             <p className="Col_text_right">
                 <i>"Quality is never an accident, it is always the result of high intention, sincere effort, intelligent direction and skillful execution; it represents the wise choice fo many alternatives"</i> William A.
             </p>
@@ -32,28 +32,6 @@ export default function Quality() {
      <
     style jsx global > {
       `
-        .col-6 {
-          height: inherit;
-          padding: 7.5em 3em 0 5em;
-      }
-
-      .Col_text_left {
-          font-size: .85em;
-          line-height: 2em;
-          padding-left: 1em;
-          line-height: 2.5em;
-          border-left: .3em solid #f2f2f2;
-          }
-
-      .Col_text_right {
-            color: #888;
-          font-size: .85em;
-          line-height: 2em;
-          padding-left: 1em;
-          line-height: 2.5em;
-          border-left: .3em solid #f2f2f2;
-      }
-
       .quality {
           height: inherit;
           margin-top: 4em;
@@ -87,6 +65,9 @@ export default function Quality() {
         background-color: #48c2c8;
         text-decoration: none;
         box-shadow: none;
+      }
+      @media only screen and (max-width: 560px) {
+
       }
    `
     } < /style> </>

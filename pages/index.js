@@ -43,7 +43,8 @@ export default function Home() {
     <
     LandingTestimonials />
     <
-    Footer / >
+    Footer />
+
     <
     Policy />
 

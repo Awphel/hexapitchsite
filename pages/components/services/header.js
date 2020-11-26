@@ -6,7 +6,7 @@ export default function ServicesHeader() {
     <
     div className = "row" >
     <
-    div className = "col-sm intro" >
+    div className = "col-12 intro" >
     <
     h1 > Our Services< /h1 >
 
@@ -101,7 +101,7 @@ export default function ServicesHeader() {
         color: #fff;
       }
 
-      h3 {
+      .intro h3 {
           margin-bottom: .5em;
           margin-top: 2em;
           color: #fff;
@@ -118,7 +118,6 @@ export default function ServicesHeader() {
         line-height: 1.65em;
         word-spacing: .15em;
       }
-
 
       .secondary_icons {
         margin-right: .5em;
@@ -207,6 +206,34 @@ export default function ServicesHeader() {
       opacity: 1;
       transform: none;
       }
+      }
+      @media only screen and (max-width: 1024px) {
+        .header {
+          background: rgb(50,58,107);
+          background: linear-gradient(61deg, rgba(50,58,107,1) 0%, rgba(72,194,200,1) 47%);
+        }
+        .header-down-arrow {
+          visibility: hidden;
+        }
+        .intro {
+          margin-left:  4em;
+          margin-top: 20%;
+          padding-right: 15em;
+        }
+      }
+      @media only screen and (max-width: 560px) {
+          .intro {
+            text-align: center;
+            padding: 2em;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .secondaryNAV {
+            margin-left: 20%;
+            margin-right: auto;
+            text-align: center;
+          }
+
       }
 
       `

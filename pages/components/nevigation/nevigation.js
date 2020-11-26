@@ -271,9 +271,14 @@ export default function NevigationBar() {
       margin-right: 1em;
       margin-top: .5em;
       margin-bottom: 1em;
-      color: rgb(50,58,107);
       text-align: center;
       transition: .5s;
+    }
+    .number_1 a {
+        color: rgb(50,58,107)!important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: #FFF;
     }
 }
         `

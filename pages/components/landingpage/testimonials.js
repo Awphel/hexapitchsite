@@ -39,14 +39,12 @@ export default function LandingTestimonials() {
 
     .Landing_testimonials {
         width: 100%!important;
-        padding: 8em .5em 3em .5em;
+        padding: 6em .5em 3em .5em;
         text-align: center;
-        height: 110vh;
+        height: 100vh;
         left: 0;
         margin-left: 0;
         margin-right: 0;
-        margin-top: 3em;
-        overflow-x: hidden;
       }
 
       .Landing_testimonials h1 {
@@ -59,7 +57,17 @@ export default function LandingTestimonials() {
         font-weight: 550;
         font-size: 2em;
       }
+  @media only screen and (max-width: 1024px) {
+        .Landing_testimonials {
+          height: auto;
+        }
+  }
+  @media only screen and (max-width: 411px) {
+        .Landing_testimonials {
+            height: 100vh;
 
+        }
+  }
        `
     } < /style>
  </>
