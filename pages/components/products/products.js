@@ -478,7 +478,26 @@ export default function Products({
             width: 20em;
             height: 35em;
           }
-
+        }
+        @media only screen and (max-width: 768px) {
+          .tertiaryButton {
+            font-size: .6em;
+          }
+          .intro h1 {
+            margin-top: 1em;
+          }
+        }
+        @media only screen and (max-width: 540px) {
+          .intro h1 {
+            font-size: 1.5em;
+            margin-top: 1.85em;
+          }
+          .tertiary_NAV {
+            width: 90%;
+          }
+          .tertiaryButton {
+            font-size: .45em;
+          }
         }
       `
     } < /style>
