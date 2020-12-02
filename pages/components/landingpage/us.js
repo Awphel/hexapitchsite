@@ -18,14 +18,15 @@ export default function LandingUS () {
                 Our ambition is to bring transparency and fairness to the
                 medical supply chain from start to finish. - <a href="#testimonials" className="textLINK_MORE"><i>We put your needs first!</i></a>
             </p>
-            <p>
-            <a type="button" href="/components/about/about-us" className ="btn secondaryCTA">Get to Know Us</a>
-                <a href="#" type="button" className ="btn primaryCTA" href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" >Make an Enquiry</a>
-            </p>
+
         </div>
         <div className="col">
             <img src="/doctor.png" className="sectionIMAGE"/>
         </div>
+        </div>
+        <div className="col-12">
+        <a type="button" href="/components/about/about-us" className ="btn secondaryCTA">Get to Know Us</a>
+            <a href="#" type="button" className ="btn primaryCTA" href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" >Make an Enquiry</a>
         </div>
       </div>
       <div className="col-12 affiliates">
@@ -39,7 +40,7 @@ export default function LandingUS () {
      </div>
 
      <
-    style jsx global > {
+    style jsx > {
       `
       .usText {
           text-align: left;
@@ -108,9 +109,7 @@ export default function LandingUS () {
             height: auto;
           }
           .primaryCTA, .secondaryCTA {
-            float: left;
             margin-left: .5em;
-            width: 100%;
           }
 }
 

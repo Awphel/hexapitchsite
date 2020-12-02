@@ -84,7 +84,7 @@ export default function NevigationBar() {
     href = "/components/contact/contact" > Contact < /a> < /
     li > <
     /ul> <
-    div id="number" className = "number_1" >
+    div id="number" className = "number_2" >
       <a href="/components/products/products">
      View Products</a>
      <

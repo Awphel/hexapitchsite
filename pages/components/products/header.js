@@ -48,20 +48,17 @@ export default function ProductsHeader() {
         padding-bottom: 1em;
         line-height: .7em;
         font-weight: 550;
-        font-size: 3em;
       }
 
       .headingText {
           color: #48c2c8;
       }
 
-
       p {
         color: #fff;
         line-height: 1.65em;
         word-spacing: .15em;
       }
-
 
       .secondary_icons {
         margin-right: .5em;
@@ -85,23 +82,42 @@ export default function ProductsHeader() {
       }
 
       .header {
-        background-image: url("/head_image.png");
-        background-position: right;
+        background: rgb(50,58,107);
+        background: linear-gradient(61deg, rgba(50,58,107,1) 0%, rgba(72,194,200,1) 47%);
         min-width: 100%!important;
-        height: 45vh;
         position: static;
+        height: 45vh;
         left: 0;
         top: 0%;
       }
 
       .intro {
-        margin-top: 13%;
+        margin-top: 9%;
+        margin-left: 0;
+        font-size: 2em;
+        text-align: center;
       }
 
       .textLINK_MORE {
         color: rgb(257,29,95);
         text-decoration: none;
         transition: .8s;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        .header {
+          min-width: 100%!important;
+          text-align: center;
+          position: static;
+          height: 30vh;
+          left: 0;
+          top: 0;
+        }
+      @media only screen and (max-width: 560px) {
+        .intro h1 {
+          font-size: 2em;
+          margin-top: 8%;
+        }
       }
       `
     } < /style> </ >

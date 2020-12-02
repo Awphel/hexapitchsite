@@ -108,7 +108,8 @@ body {
 
       .header {
         background-image: url("/head_image.png");
-        background-position: right;
+        background-attachment:fixed;
+        background-position: center;
         background-size: cover;
         min-width: 100%!important;
         height: 100vh;
@@ -118,7 +119,6 @@ body {
       }
 
       .intro {
-
         margin-top: 15%;
         margin-left: 4em;
         text-align: left;
@@ -128,6 +128,25 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .header {
+    min-width: 100%!important;
+    height: 100vh;
+    position: static;
+    left: 0;
+    top: 0;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .intro {
+    width: 100%!important;
+    margin-top: 20%;
+    margin-left: 4em;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 996px) {
+
+  .header {
     background: rgb(50,58,107);
     background: linear-gradient(61deg, rgba(50,58,107,1) 0%, rgba(72,194,200,1) 47%);
     min-width: 100%!important;
@@ -136,9 +155,12 @@ body {
     left: 0;
     top: 0;
   }
+  h1 {
+    font-size: 2.5em;
+  }
   .intro {
     width: 100%!important;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-left: 4em;
     text-align: left;
   }

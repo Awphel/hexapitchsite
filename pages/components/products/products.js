@@ -5,7 +5,6 @@ import NevigationBar from '../nevigation/nevigation.js';
 import Policy from "../privacy policy/policy.js";
 import Footer from '../footer/footer.js';
 import ProductsHeader from '../products/header.js';
-
 import {
   connectToDatabase
 } from "../../../util/mongodb";
@@ -50,7 +49,7 @@ export default function Products({
     <div className="tertiary_NAV">
     {/* Secondary Nevigation buttons */}
         <a onClick={() => togglePPE()} className="tertiaryButton">PPE<i className="fas fa-angle-down ml-2" /></a>
-        <a onClick={() => allProducts()} className="tertiaryButton">MEDICAL</a>
+        <a onClick={() => mawaza()} className="tertiaryButton">MEDICAL</a>
         <a onClick={() => allProducts()} className="tertiaryButton ">PHARMACEUTICAL</a>
     </div>
     <div className="col-12">
@@ -82,116 +81,163 @@ export default function Products({
 
     {/* This is the random product showcase */}
     <div id="RandomProducts" className="RandomProducts">
-    {ppeProductListings.map(item => {
+    {ppeProductListings.map(({Image, Description, Product}, i) => (
 
-      return<
-      div className = "product_holder" >
-      <a href= {item.Image} >
+      <
+      div key = {i} className = "product_holder" >
+      <a href= {Image} >
       <
       img className = "product_thumbs"
       src = {
-        item.Image
+        Image
       } /
       >
       </a>
        <
       h5 > {
-        item.Product
-      } < /h5> < /
+        Product
+      } < /h5>
+      <div className="product_details">
+        <h6>Overview</h6>
+        <ul className = "overview_list">
+          <li>{Description.line1}</li>
+          <li>{Description.line2}</li>
+          <li>{Description.line3}</li>
+        </ul>
+        <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Get It</a>
+      </div>
+      < /
       div >
-    }
-    )}
+    )
+  )}
     </div>
 
     {/* Respirators showcase*/}
     <div id="Respirators" className="Respirators">
-        {ppeProductListings.filter(item => item.Category === "Respiratory").map(item => {
+        {ppeProductListings.filter(item => item.Category === "Respiratory").map(({Image, Description, Product}, x) => (
 
-          return<
-          div className = "product_holder" >
-          <a href= {item.Image} >
+          <
+          div key = {x} className = "product_holder" >
+          <a href= {Image} >
           <
           img className = "product_thumbs"
-          src = {
-            item.Image
-          } /
-          >
+          src = {Image} />
           </a>
            <
           h5 > {
-            item.Product
-          } < /h5> < /
+            Product
+          } < /h5>
+          <div className="product_details">
+          <h6>Overview</h6>
+          <ul className = "overview_list">
+            <li>{Description.line1}</li>
+            <li>{Description.line2}</li>
+            <li>{Description.line3}</li>
+          </ul>
+          <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Get It</a>
+          </div>
+          < /
           div >
-        }
+        )
     )}
     </div>
 
     {/* Face showcase*/}
     <div id="Face" className="Face">
-        {ppeProductListings.filter(item => item.Category === "Face").map(item => {
+        {ppeProductListings.filter(item => item.Category === "Face").map(({Image, Description, Product}, y) => (
 
-          return<
-          div className = "product_holder" >
-          <a href= {item.Image} >
+          <
+          div key = {y} className = "product_holder" >
+          <a href= {Image} >
           <
           img className = "product_thumbs"
           src = {
-            item.Image
+            Image
           } /
           >
           </a>
            <
           h5 > {
-            item.Product
-          } < /h5> < /
+            Product
+          } < /h5>
+          <div className="product_details">
+          <h6>Overview</h6>
+          <ul className = "overview_list">
+            <li>{Description.line1}</li>
+            <li>{Description.line2}</li>
+            <li>{Description.line3}</li>
+          </ul>
+          <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Get It</a>
+          </div>
+          < /
           div >
-        }
+        )
     )}
     </div>
 
     {/* Hand showcase*/}
     <div id="Hand" className="Hand">
-        {ppeProductListings.filter(item => item.Category === "Hand").map(item => {
+        {ppeProductListings.filter(item => item.Category === "Hand").map(({Image, Description, Product}, z) => (
 
-          return<
-          div className = "product_holder" >
-          <a href= {item.Image} >
+          <
+          div key = {z} className = "product_holder" >
+          <a href= {Image} >
           <
           img className = "product_thumbs"
           src = {
-            item.Image
+            Image
           } /
           >
           </a>
            <
           h5 > {
-            item.Product
-          } < /h5> < /
+            Product
+          } < /h5>
+          <div className="product_details">
+          <h6>Overview</h6>
+          <ul className = "overview_list">
+            <li>{Description.line1}</li>
+            <li>{Description.line2}</li>
+            <li>{Description.line3}</li>
+          </ul>
+          <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Get It</a>
+          </div>
+          < /
           div >
-        }
+        )
     )}
     </div>
 
     {/* Clothing showcase*/}
     <div id="Clothing" className="Clothing">
-        {ppeProductListings.filter(item => item.Category === "Clothing").map(item => {
+        {ppeProductListings.filter(item => item.Category === "Clothing").map(({Image, Description, Product}, u) => (
 
-          return<
-          div className = "product_holder" >
-          <a href= {item.Image} >
+          <
+          div key = {u} className = "product_holder" >
+          <a href= {Image} >
           <
           img className = "product_thumbs"
           src = {
-            item.Image
+            Image
           } /
           >
           </a>
            <
           h5 > {
-            item.Product
-          } < /h5> < /
+            Product
+          } < /h5>
+          <div className="product_details">
+          <h6>Overview</h6>
+          <ul className = "overview_list">
+            <li>{Description.line1}</li>
+            <li>{Description.line2}</li>
+            <li>{Description.line3}</li>
+          </ul>
+          <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Get It</a>
+          </div>
+          < /
           div >
-        }
+        )
     )}
     </div>
 
@@ -234,8 +280,7 @@ export default function Products({
         html,
         body {
 
-          font-family: 'Open Sans',
-            Oxygen, Ubuntu;
+          font-family: 'Open Sans', Oxygen, Ubuntu;
           margin: 0!important;
           padding: 0!important;
           overflow-x: hidden;
@@ -245,6 +290,24 @@ export default function Products({
           scroll-snap-type: mandatory;
           zoom: 100%;
           color: #222;
+        }
+
+        .secondaryCTA {
+            color: #fff;
+            border-radius: 3em;
+            margin: 1.85em 0 .3em 0em;
+            text-transform: uppercase;
+            padding: .5em 1.5em .5em 1.5em;
+            background-color: rgb(50,58,107);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
+        }
+
+        .secondaryCTA:hover {
+          color: rgb(50,58,107);
+          border: 1px solid rgb(50,58,107);
+          background-color: #fff;
+          text-decoration: none;
+          box-shadow: none;
         }
 
         .RandomProducts {
@@ -295,17 +358,18 @@ export default function Products({
             overflow-y: hidden;
             margin-bottom: 2em;
             text-align: center;
-            background-color: #fff;
+            background-color: #f1f3f4;
         }
 
         .tertiary_NAV {
-            width: 30em;
+            width: 50%;
             height: 3em;
             padding: .5em;
             border-radius: 3em;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 1.5em;
+            background-color: #fff;
             border: .3em solid #323a6b;
             vertical-align: center;
             color: #222;
@@ -315,8 +379,11 @@ export default function Products({
           width: 20em;
           height: 12em;
           margin: 1em;
-          transition: .5s;
           overflow: hidden;
+          transition: .5s;
+          border-radius: .2em;
+          background-color: #fff;
+          padding-bottom: 2em;
           display: inline-block;
           box-shadow: 1px 1px 17px -2px rgba(0,0,0,0.20);
         }
@@ -324,15 +391,47 @@ export default function Products({
         .product_holder h5 {
           font-size: .85em;
         }
+
+        .product_details {
+          border-top: .35em solid rgba(72,194,200,1);
+          border-radius: .2em;
+          padding-top: 1em;
+          text-align: left;
+          margin-top: 2em;
+          margin-left: auto;
+          margin-right: auto;
+          width: 80%;
+        }
+
+        .overview_list {
+          color: #7f8c8d;
+          font-size: .65em;
+          padding-left: .95em;
+          line-height: 2em;
+        }
+
+        .overview_list li {
+          padding-top: 1.25em;
+        }
+
+        .product_details p {
+          color: #323232;
+          font-size: .65em;
+        }
+
+        .product_details h6 {
+          font-size: .85em;
+          font-weight: 600;
+          color: #323a6b;
+        }
+
         .product_thumbs {
           width: 8em;
           height: 8em;
           margin: 1em;
         }
-
-        .product_holder:hover {
-          width: 18em;
-          height: 10em;
+        .product_thumbs:hover {
+          filter: grayscale(100%);
         }
 
         #thehead {
@@ -367,13 +466,18 @@ export default function Products({
         .optionsLink {
           display: inline-block;
         }
-
         .notifications {
           border-bottom: 1px solid #c6c6c6;
+          padding: .5em .5em .5em .5em;
           margin-bottom: 1em;
           margin-right: auto;
           margin-left: auto;
-          padding: .5em .5em .5em .5em;
+        }
+        @media only screen and (max-width: 1024px) {
+          .product_holder {
+            width: 20em;
+            height: 35em;
+          }
 
         }
       `
@@ -384,14 +488,16 @@ export default function Products({
   )
 }
 
+
+
 //Function for fetching data from mongodb PPE Product list
 export async function getServerSideProps() {
   const {
             db
           } = await connectToDatabase();
   const ppeProductListings = await db
-      .collection("ppeProductListings")
-      .find('Respirator')
+      .collection("newProductListings")
+      .find()
       .limit(20)
       .toArray();
       return {

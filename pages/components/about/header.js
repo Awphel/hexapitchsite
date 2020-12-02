@@ -209,6 +209,12 @@ export default function AboutHeader() {
       }
       }
 
+      @media only screen and (max-width: 1024px) {
+        .header {
+          background: rgb(50,58,107);
+          background: linear-gradient(61deg, rgba(50,58,107,1) 0%, rgba(72,194,200,1) 47%);
+        }
+      }
       `
     } < /style> </>
   )

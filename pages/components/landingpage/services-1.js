@@ -125,7 +125,6 @@ export default function LandingServices() {
         box-shadow: none;
       }
 
-
       .textLINK_MORE {
         color: rgb(257,29,95);
         text-decoration: none;
