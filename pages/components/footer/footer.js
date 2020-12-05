@@ -130,6 +130,8 @@ export default function Footer() {
           bottom: 10%;
           font-size: .7em;
           position: absolute;
+          padding-left: .5em;
+          padding-right: .5em;
       }
 
       .footer_logo {
@@ -172,6 +174,10 @@ export default function Footer() {
           }
           .social_icons {
             left: 30%;
+          }
+          .copyrightTEXT {
+            width: 80%;
+            left: 10%;
           }
       `
     } < /style>
