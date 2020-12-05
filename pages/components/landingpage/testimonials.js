@@ -65,7 +65,9 @@ export default function LandingTestimonials() {
   @media only screen and (max-width: 411px) {
         .Landing_testimonials {
             height: 100vh;
-
+        }
+        .TESTtext {
+          width: auto;
         }
   }
        `
