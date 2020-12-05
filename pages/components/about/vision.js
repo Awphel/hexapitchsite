@@ -2,7 +2,7 @@ export default function Vision() {
   return (
   <>
   <div id="vision" className="row">
-    <div className="col-6 vision">
+    <div className="col-sm vision">
         <div className="iconHolder">
             <i className="fas fa-binoculars fa-4x" />
         </div>
@@ -11,7 +11,7 @@ export default function Vision() {
         </p>
 
     </div>
-    <div className="col-6 ethics">
+    <div className="col-sm ethics">
         <div className="iconHolder">
             <i className="fas fa-balance-scale fa-4x" />
         </div>
@@ -42,6 +42,7 @@ export default function Vision() {
         }
 
         .vision, .ethics {
+            height: auto;
             margin-top: 2em;
             text-align: center;
             background-color: #fff;

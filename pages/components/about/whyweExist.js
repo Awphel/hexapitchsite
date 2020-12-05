@@ -3,19 +3,19 @@ export default function WhyweExist() {
     <>
 
 <
-    div id="we_exist" className="row about">
+    div id="we_exist" className="row">
         <div className="col-12 section_one">
             <h1>Why we exist!</h1>
             <p> Hexa Medical Solutions is committed to restoring trust and
                 efficiency in the medical supply chain.
             </p>
         </div>
-        <div className="col-6">
+        <div className="col-sm">
             <h3>We get it</h3>
             <p className="Col_text_left">We provide more than just a service, we understand your frustrations.</p>
             <a href="https://form.typeform.com/to/Lg1lp2tq" data-mode="popup"  target="_blank" type="button" className ="btn secondaryCTA" >Make an Enquiry</a>
         </div>
-        <div className="col-6">
+        <div className="col-sm">
             <p className="Col_text_right">Having experienced the difficulties involved in sourcing reliable medical equimpnet in different parts of the world - first hand - we're here to help you source the equipment you need, at the grade you require and at the price that works for your budget. <a href="/components/services/services" className ="textLINK_MORE"><i>See our services</i></a>.</p>
         </div>
 
@@ -26,8 +26,7 @@ export default function WhyweExist() {
      <
     style jsx global > {
       `
-        .col-6 {
-          height: inherit;
+        .col-sm {
           padding: 4.5em 5em;
       }
 
@@ -38,7 +37,7 @@ export default function WhyweExist() {
       }
 
       .Col_text_right {
-          font-size: 1em;
+          font-size: .85em;
           line-height: 2em;
           padding-left: 1em;
           line-height: 2.5em;
@@ -68,7 +67,7 @@ export default function WhyweExist() {
           font-variant-caps: all-small-caps;
       }
 
-      .col-6 h3 {
+      .col-sm h3 {
           margin-bottom: .65em;
           font-size: 1.5em;
           color: #48c2c8;
@@ -90,6 +89,14 @@ export default function WhyweExist() {
         background-color: #48c2c8;
         text-decoration: none;
         box-shadow: none;
+      }
+      @media only screen and (max-width: 560px) {
+        .section_one {
+          padding-top: 2.55em;
+        }
+        .col-sm {
+
+        }
       }
    `
     } < /style> </>

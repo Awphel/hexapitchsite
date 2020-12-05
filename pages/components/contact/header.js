@@ -133,6 +133,19 @@ export default function ContactHeader() {
         text-decoration: none;
         transition: .8s;
       }
+      @media only screen and (max-width: 540px) {
+        .intro {
+          width: 90%!important;
+          padding-right: 0;
+          margin-left: 1em;
+          margin-top: 10em;
+        }
+        .linebreak {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 5em;
+        }
+      }
       `
     } < /style> </>
   )

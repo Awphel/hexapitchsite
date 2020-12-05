@@ -2,7 +2,7 @@ export default function Team() {
   return (
   <>
     <div id="Theteam" className="row team_section">
-        <div className="col-12">
+        <div className="col-sm teamHolder">
             <h1>Meat the Team</h1>
             <p> We are a growing team of medical and engineering professionals based in the UK.</p>
             <div className="teamImages">
@@ -36,9 +36,9 @@ export default function Team() {
             margin-top: .5em;
         }
         .team_section {
-            height: 100vh;
+            height: auto;
             text-align: center;
-            padding-top: 6.65em;
+            padding-top: 2.5em;
             background: linear-gradient(180deg, rgba(72,194,200, .1) 0%, rgba(237,29,95,0) 100%);
         }
 
@@ -50,7 +50,7 @@ export default function Team() {
       }
 
         .teamImages {
-            height: 40vh;
+            height: auto;
             margin-top: 5em;
             margin-bottom: 3.5em;
         }

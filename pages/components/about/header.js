@@ -215,6 +215,23 @@ export default function AboutHeader() {
           background: linear-gradient(61deg, rgba(50,58,107,1) 0%, rgba(72,194,200,1) 47%);
         }
       }
+      @media only screen and (max-width: 560px) {
+          .intro {
+            text-align: center;
+            padding: 2em;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .secondaryNAV {
+            margin-left: 20%;
+            margin-right: auto;
+            text-align: center;
+          }
+          .header-down-arrow {
+            visibility: hidden;
+          }
+
+      }
       `
     } < /style> </>
   )
