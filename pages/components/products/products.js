@@ -385,7 +385,7 @@ export default function Products({
 
         .product_holder {
           width: 20em;
-          height: 12em;
+          height: 40em;
           margin: 1em;
           overflow: hidden;
           transition: .5s;

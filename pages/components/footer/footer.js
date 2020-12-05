@@ -18,8 +18,8 @@ export default function Footer() {
           Services
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="#">Suppy chain management</a>
-          <a className="dropdown-item" href="#">Quality compliance</a>
+          <a className="dropdown-item" href="/components/services/services/#supplyChain">Suppy chain management</a>
+          <a className="dropdown-item" href="/components/services/services/#quality">Quality compliance</a>
         </div>
       </li>
             <li>
@@ -29,14 +29,17 @@ export default function Footer() {
                 <Link href="/components/about/about-us" ><a className="navLINKS">About Us</a></Link>
             </li>
             <li>
-                <a href="#" className="navLINKS">Contact</a>
+                <a href="/components/contact/contact" className="navLINKS">Contact</a>
             </li>
         </ul>
         <div className="copyrightTEXT">All rights reserved Hexa 2020<a type="button" data-toggle="modal" data-target="#policyModal" className="privacyLINK"><b>Privacy policy</b></a></div>
         <div className="social_icons">
-            <img src="/icons/linkedin-in-brands.svg" className="fontAwesome-footer-icons" />
-            <img src="/icons/facebook-f-brands.svg" className="fontAwesome-facebook-icon" />
-            <img src="/icons/twitter-brands.svg" className="fontAwesome-footer-icons" />
+          <a href="#" className="social_links">
+            <img src="/icons/linkedin-in-brands.svg" className="fontAwesome-footer-icons" /></a>
+          <a href = "#" className="social_links">
+            <img src="/icons/facebook-f-brands.svg" className="fontAwesome-facebook-icon" /></a>
+          <a href = "#" className="social_links">
+            <img src="/icons/twitter-brands.svg" className="fontAwesome-footer-icons" /></a>
         </div>
         <div className="footer_logo">
             <img src="/Logo_white.webp" className="footer_image" />
@@ -97,7 +100,7 @@ export default function Footer() {
 
       .social_icons {
           position: absolute;
-          left: 45%;
+          left: 43%;
           margin-top: 2em;
       }
 

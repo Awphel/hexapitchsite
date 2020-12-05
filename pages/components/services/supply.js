@@ -10,7 +10,7 @@ export default function Supply() {
             </p>
         </div>
         <div id="sourcing" className="col">
-            <h3>1. Sourcing</h3>
+            <h3>< font color = "#48C2C8" >1</font>. Sourcing</h3>
             <p className="Col_text_left">
                 Our teams specialize in sourcing and compiling a comprehensive/centralised database of information on all medical, pharmaceutical, and PPE supplies worldwide, from product specs to details of the manufacturers, to production capacity, and everything in between. We aim to ensure the healthcare system is covered so you can focus on saving lives.
             </p>
@@ -18,35 +18,35 @@ export default function Supply() {
         </div>
 
         <div id="marketing" className="col">
-            <h3>2. Marketing</h3>
+            <h3>< font color = "#48C2C8" >2</font>. Marketing</h3>
             <p className="Col_text_right">
                 With the help of a centralised marketplace for healthcare supplies in the form of the Hexa Platform, buyers have the confidence of knowing they have unrestricted access to the global supply; for every single medical product available for purchase worldwide at their fingertips. And with the peace of mind that our Hexa platform enables suppliers to maximise exposure to the global market, all healthcare suppliers can then focus on manufacturing and quality compliance.
             </p>
         </div>
 
         <div id="auditing" className="col">
-            <h3>3. Auditing</h3>
+            <h3>< font color = "#48C2C8" >3</font>. Auditing</h3>
             <p className="Col_text_right">
                 With the help of a centralised marketplace for healthcare supplies in the form of the Hexa Platform, buyers have the confidence of knowing they have unrestricted access to the global supply; for every single medical product available for purchase worldwide at their fingertips. And with the peace of mind that our Hexa platform enables suppliers to maximise exposure to the global market, all healthcare suppliers can then focus on manufacturing and quality compliance.
             </p>
         </div>
 
         <div id="legal" className="col">
-            <h3>4. Legals Management</h3>
+            <h3>< font color = "#48C2C8" >4</font>. Legals Management</h3>
             <p className="Col_text_right">
                 With the help of a centralised marketplace for healthcare supplies in the form of the Hexa Platform, buyers have the confidence of knowing they have unrestricted access to the global supply; for every single medical product available for purchase worldwide at their fingertips. And with the peace of mind that our Hexa platform enables suppliers to maximise exposure to the global market, all healthcare suppliers can then focus on manufacturing and quality compliance.
             </p>
         </div>
 
         <div id="payment" className="col">
-            <h3>5. Payment Processing</h3>
+            <h3>< font color = "#48C2C8" >5</font>. Payment Processing</h3>
             <p className="Col_text_right">
                 With the help of a centralised marketplace for healthcare supplies in the form of the Hexa Platform, buyers have the confidence of knowing they have unrestricted access to the global supply; for every single medical product available for purchase worldwide at their fingertips. And with the peace of mind that our Hexa platform enables suppliers to maximise exposure to the global market, all healthcare suppliers can then focus on manufacturing and quality compliance.
             </p>
         </div>
 
         <div id="logistics" className="col">
-            <h3>6. Logistics</h3>
+            <h3>< font color = "#48C2C8" >6</font>. Logistics</h3>
             <p className="Col_text_right">
                 With the help of a centralised marketplace for healthcare supplies in the form of the Hexa Platform, buyers have the confidence of knowing they have unrestricted access to the global supply; for every single medical product available for purchase worldwide at their fingertips. And with the peace of mind that our Hexa platform enables suppliers to maximise exposure to the global market, all healthcare suppliers can then focus on manufacturing and quality compliance.
             </p>
