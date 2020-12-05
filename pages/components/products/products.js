@@ -274,7 +274,7 @@ export default function Products({
     src = "/typeform.js" > < /script>
 
     <
-    style jsx > {
+    style jsx global > {
       `
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
@@ -453,7 +453,7 @@ export default function Products({
         }
 
         #thehead {
-          font-size: .85em
+          font-size: .85em;
         }
 
         .ppeOptions_CLOSED {
