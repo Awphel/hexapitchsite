@@ -8,8 +8,8 @@ export default function Vision() {
         </div>
         <h5>Our Mission</h5>
         <p>Always to keep quality control, fair pricing and customer care at the heart of the Hexa Medical Solutions service. Upholding the trust of the healthcare professionals and the communities around the world, who count on us.
-        </p> 
-        
+        </p>
+
     </div>
     <div className="col-6 ethics">
         <div className="iconHolder">
@@ -19,7 +19,7 @@ export default function Vision() {
         <p>Always to keep quality control, fair pricing and customer care at the heart of the Hexa Medical Solutions service. Upholding the trust of the healthcare professionals and the communities around the world, who count on us.
         </p>
     </div>
-    
+
   </div>
   <
     style jsx global > {
@@ -35,18 +35,18 @@ export default function Vision() {
             height: 7.5em;
             width: 7.5em;
         }
-        
+
         .fas {
-            color: #ed1d5f;
-            
+            color: #48C2C8;
+
         }
-        
+
         .vision, .ethics {
             margin-top: 2em;
             text-align: center;
             background-color: #fff;
         }
-        
+
           `
     } < /style> < / >
   )

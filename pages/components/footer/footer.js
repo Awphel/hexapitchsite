@@ -113,7 +113,7 @@ export default function Footer() {
 
       .privacyLINK {
         line-height: 3em;
-        color: rgb(72,194,200)!important;
+        color: #48C2C8!important;
         text-transform: uppercase;
         text-decoration: none;
         transition: .8s;

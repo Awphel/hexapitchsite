@@ -126,7 +126,7 @@ export default function LandingServices() {
       }
 
       .textLINK_MORE {
-        color: rgb(257,29,95);
+        color: #48C2C8;
         text-decoration: none;
         transition: .8s;
       }

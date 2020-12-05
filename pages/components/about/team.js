@@ -23,7 +23,7 @@ export default function Team() {
                 <h6>Flo</h6>
                </div>
             </div>
-            <p>< font color = "#ed1d5f" >Join us</font> - let's change the world!</p>
+            <p>< font color = "#48C2C8" >Join us</font> - let's change the world!</p>
         </div>
     </div>
 

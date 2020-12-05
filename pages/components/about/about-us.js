@@ -13,7 +13,9 @@ export default function AboutUS() {
     <
     Head >
     <
-    title > Hexa < /title> <
+    title > Hexa < /title>
+    <meta name= "viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="." /> <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap CSS

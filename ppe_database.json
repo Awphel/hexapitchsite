@@ -10,7 +10,8 @@
      },
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/mTR3j1X/3m1860-Respirator.jpg"
+   "Image": "https://i.ibb.co/mTR3j1X/3m1860-Respirator.jpg",
+   "Quality": "Grade 3"
  },
  {
    "Product": "3M 8210 Respirator",
@@ -23,7 +24,8 @@
      },
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/jbBs7zQ/3m8210-Respirator.jpg"
+   "Image": "https://i.ibb.co/jbBs7zQ/3m8210-Respirator.jpg",
+   "Quality": "Grade 3"
  },
  {
    "Product": "FFP2 Respirator",
@@ -36,126 +38,144 @@
      },
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/kqGdSgk/ffp2-Respirator.jpg"
+   "Image": "https://i.ibb.co/kqGdSgk/ffp2-Respirator.jpg",
+   "Quality": "Grade 2"
  },
  {
    "Product": "KN95 Respirator",
    "Description": "",
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/yyx6Lrt/KN95-Respirator.jpg"
+   "Image": "https://i.ibb.co/yyx6Lrt/KN95-Respirator.jpg",
+   "Quality": "Grade 3"
  },
  {
    "Product": "N95 Respirator",
    "Description": "",
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/V33h6tg/N95-Respirator.jpg"
+   "Image": "https://i.ibb.co/V33h6tg/N95-Respirator.jpg",
+   "Quality": "Grade 4"
  },
  {
    "Product": "Surgical Type 2R Mask",
    "Description": "",
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/ckTtQ4h/surgical-type-2-R-mask.jpg"
+   "Image": "https://i.ibb.co/ckTtQ4h/surgical-type-2-R-mask.jpg",
+   "Quality": "Grade 1"
  },
  {
    "Product": "Surgical Level 3 Mask",
    "Description": "",
    "Category": "Respiratory",
    "Supplier": "",
-   "Image": "https://i.ibb.co/xf0NHxY/surgical-level-3-mask.jpg"
+   "Image": "https://i.ibb.co/xf0NHxY/surgical-level-3-mask.jpg",
+   "Quality": "Grade 1"
  },
  {
    "Product": "Nitrile Surgical Sterile Gloves",
    "Description": "",
    "Category": "Hand",
    "Supplier": "",
-   "Image": "https://i.ibb.co/YkdCWmH/nitril-surgical-sterile-gloves.jpg"
+   "Image": "https://i.ibb.co/YkdCWmH/nitril-surgical-sterile-gloves.jpg",
+   "Quality": "Grade 4"
  },
  {
    "Product": "Latex Surgical Sterile Gloves",
    "Description": "",
    "Category": "Hand",
    "Supplier": "",
-   "Image": "https://i.ibb.co/YWkzK6m/latex-surgical-sterile-gloves.jpg"
+   "Image": "https://i.ibb.co/YWkzK6m/latex-surgical-sterile-gloves.jpg",
+   "Quality": "Grade 2"
  },
  {
    "Product": "Nitrile Examination Gloves",
    "Description": "",
    "Category": "Hand",
    "Supplier": "",
-   "Image": "https://i.ibb.co/Bcx22Nx/nitril-examination-gloves.jpg"
+   "Image": "https://i.ibb.co/Bcx22Nx/nitril-examination-gloves.jpg",
+   "Quality": "Grade 4"
  },
  {
    "Product": "Vinyl Examination Gloves",
    "Description": "",
    "Category": "Hand",
    "Supplier": "",
-   "Image": "https://i.ibb.co/hdKd6Cd/vinyl-examination-gloves.jpg"
+   "Image": "https://i.ibb.co/hdKd6Cd/vinyl-examination-gloves.jpg",
+   "Quality": "Grade 1"
  },
  {
    "Product": "Latex Examination Gloves",
    "Description": "",
    "Category": "Hand",
    "Supplier": "",
-   "Image": "https://i.ibb.co/9g6dLSp/latex-examination-gloves.jpg"
+   "Image": "https://i.ibb.co/9g6dLSp/latex-examination-gloves.jpg",
+   "Quality": "Grade 2"
  },
  {
    "Product": "Surgical Sterile Gowns",
    "Description": "",
    "Category": "Clothing",
    "Supplier": "",
-   "Image": "https://i.ibb.co/87KJ4T8/surgical-non-sterile-gown.jpg"
+   "Image": "https://i.ibb.co/87KJ4T8/surgical-non-sterile-gown.jpg",
+   "Quality": "Grade 3"
  },
  {
    "Product": "Surgical Non-Sterile Gowns",
    "Description": "",
    "Category": "Clothing",
    "Supplier": "",
-   "Image": "https://i.ibb.co/3khgXvg/surgical-sterile-gown.jpg"
+   "Image": "https://i.ibb.co/3khgXvg/surgical-sterile-gown.jpg",
+   "Quality": "Grade 2"
  },
  {
    "Product": "Isolation Non-Sterile Gowns",
    "Description": "",
    "Category": "Clothing",
    "Supplier": "",
-   "Image": "https://i.ibb.co/pb9gsKD/non-sterile-isolation-gown.jpg"
+   "Image": "https://i.ibb.co/pb9gsKD/non-sterile-isolation-gown.jpg",
+   "Quality": "Grade 2"
  },
  {
    "Product": "Aprons",
    "Description": "",
    "Category": "Clothing",
    "Supplier": "",
-   "Image": "https://i.ibb.co/NmxTP4T/apron.jpg"
+   "Image": "https://i.ibb.co/NmxTP4T/apron.jpg",
+   "Quality": "Grade 1"
  },
  {
    "Product": "Protective Coveralls - Sterile",
    "Description": "",
    "Category": "Clothing",
    "Supplier": "",
-   "Image": "https://i.ibb.co/cJFbWXH/Protective-coveralls-sterile.jpg"
+   "Image": "https://i.ibb.co/cJFbWXH/Protective-coveralls-sterile.jpg",
+   "Quality": "Grade 4"
  },
  {
    "Product": "Protective Coveralls - Non-Sterile",
    "Description": "",
    "Category": "Clothing",
    "Supplier": "",
-   "Image": "https://i.ibb.co/tLxKTYf/protective-coveralls-non-sterile.jpg"
+   "Image": "https://i.ibb.co/tLxKTYf/protective-coveralls-non-sterile.jpg",
+   "Quality": "Grade 2"
  },
  {
    "Product": "Faceshields/Visors",
    "Description": "",
    "Category": "Face",
    "Supplier": "",
-   "Image": "https://i.ibb.co/2Zwbvx4/visor.png"
+   "Image": "https://i.ibb.co/2Zwbvx4/visor.png",
+   "Quality": "Grade 3"
  },
  {
    "Product": "Half Face Respirator",
    "Description": "",
    "Category": "Face",
    "Supplier": "",
-   "Image": "https://i.ibb.co/y5WnDGS/half-face-respirator.jpg"
+   "Image": "https://i.ibb.co/y5WnDGS/half-face-respirator.jpg",
+   "Quality": "Grade 5"
  },
  {
    "Product": "Powered Respirator",

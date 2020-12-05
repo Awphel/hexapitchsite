@@ -18,7 +18,8 @@ export default function Products({
     <
     Head >
     <
-    title > Hexa - Products < /title> <
+    title > Hexa - Products < /title>
+    <meta name= "viewport" content="width=device-width, initial-scale=1" /> <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap lightbox
@@ -81,7 +82,7 @@ export default function Products({
 
     {/* This is the random product showcase */}
     <div id="RandomProducts" className="RandomProducts">
-    {ppeProductListings.map(({Image, Description, Product}, i) => (
+    {ppeProductListings.map(({Image, Description, Product, Quality}, i) => (
 
       <
       div key = {i} className = "product_holder" >
@@ -97,8 +98,9 @@ export default function Products({
       h5 > {
         Product
       } < /h5>
+
       <div className="product_details">
-        <h6>Overview</h6>
+        <h6>Overview</h6><p><img src="/tag-solid.png" className="descrption_icons" /> {Quality}</p>
         <ul className = "overview_list">
           <li>{Description.line1}</li>
           <li>{Description.line2}</li>
@@ -114,7 +116,7 @@ export default function Products({
 
     {/* Respirators showcase*/}
     <div id="Respirators" className="Respirators">
-        {ppeProductListings.filter(item => item.Category === "Respiratory").map(({Image, Description, Product}, x) => (
+        {ppeProductListings.filter(item => item.Category === "Respiratory").map(({Image, Description, Product, Quality}, x) => (
 
           <
           div key = {x} className = "product_holder" >
@@ -128,7 +130,7 @@ export default function Products({
             Product
           } < /h5>
           <div className="product_details">
-          <h6>Overview</h6>
+          <h6>Overview</h6><p><img src="/tag-solid.png" className="descrption_icons" /> {Quality}</p>
           <ul className = "overview_list">
             <li>{Description.line1}</li>
             <li>{Description.line2}</li>
@@ -144,7 +146,7 @@ export default function Products({
 
     {/* Face showcase*/}
     <div id="Face" className="Face">
-        {ppeProductListings.filter(item => item.Category === "Face").map(({Image, Description, Product}, y) => (
+        {ppeProductListings.filter(item => item.Category === "Face").map(({Image, Description, Product, Quality}, y) => (
 
           <
           div key = {y} className = "product_holder" >
@@ -161,7 +163,7 @@ export default function Products({
             Product
           } < /h5>
           <div className="product_details">
-          <h6>Overview</h6>
+          <h6>Overview</h6><p><img src="/tag-solid.png" className="descrption_icons" /> {Quality}</p>
           <ul className = "overview_list">
             <li>{Description.line1}</li>
             <li>{Description.line2}</li>
@@ -177,7 +179,7 @@ export default function Products({
 
     {/* Hand showcase*/}
     <div id="Hand" className="Hand">
-        {ppeProductListings.filter(item => item.Category === "Hand").map(({Image, Description, Product}, z) => (
+        {ppeProductListings.filter(item => item.Category === "Hand").map(({Image, Description, Product, Quality}, z) => (
 
           <
           div key = {z} className = "product_holder" >
@@ -194,7 +196,7 @@ export default function Products({
             Product
           } < /h5>
           <div className="product_details">
-          <h6>Overview</h6>
+          <h6>Overview</h6><p><img src="/tag-solid.png" className="descrption_icons" /> {Quality}</p>
           <ul className = "overview_list">
             <li>{Description.line1}</li>
             <li>{Description.line2}</li>
@@ -210,7 +212,7 @@ export default function Products({
 
     {/* Clothing showcase*/}
     <div id="Clothing" className="Clothing">
-        {ppeProductListings.filter(item => item.Category === "Clothing").map(({Image, Description, Product}, u) => (
+        {ppeProductListings.filter(item => item.Category === "Clothing").map(({Image, Description, Product, Quality}, u) => (
 
           <
           div key = {u} className = "product_holder" >
@@ -227,7 +229,7 @@ export default function Products({
             Product
           } < /h5>
           <div className="product_details">
-          <h6>Overview</h6>
+          <h6>Overview</h6><p><img src="/tag-solid.png" className="descrption_icons" /> {Quality}</p>
           <ul className = "overview_list">
             <li>{Description.line1}</li>
             <li>{Description.line2}</li>
@@ -272,7 +274,7 @@ export default function Products({
     src = "/typeform.js" > < /script>
 
     <
-    style jsx global > {
+    style jsx > {
       `
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap');
@@ -293,19 +295,20 @@ export default function Products({
         }
 
         .secondaryCTA {
-            color: #fff;
+
+          color: rgb(50,58,107);
+          border: 1px solid rgb(50,58,107);
+          background-color: #fff;
             border-radius: 3em;
             margin: 1.85em 0 .3em 0em;
             text-transform: uppercase;
             padding: .5em 1.5em .5em 1.5em;
-            background-color: rgb(50,58,107);
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35);
         }
 
         .secondaryCTA:hover {
-          color: rgb(50,58,107);
-          border: 1px solid rgb(50,58,107);
-          background-color: #fff;
+          color: #fff;
+          background-color: rgb(50,58,107);
           text-decoration: none;
           box-shadow: none;
         }
@@ -358,7 +361,7 @@ export default function Products({
             overflow-y: hidden;
             margin-bottom: 2em;
             text-align: center;
-            background-color: #f1f3f4;
+            background-color: #FFF;
         }
 
         .tertiary_NAV {
@@ -375,6 +378,11 @@ export default function Products({
             color: #222;
         }
 
+        .descrption_icons {
+            width: 1em;
+            opacity: .5;
+        }
+
         .product_holder {
           width: 20em;
           height: 12em;
@@ -386,6 +394,16 @@ export default function Products({
           padding-bottom: 2em;
           display: inline-block;
           box-shadow: 1px 1px 17px -2px rgba(0,0,0,0.20);
+        }
+
+        .product_holder p {
+          margin-bottom: .5em;
+          margin-top: 1.5em;
+          padding: .5em;
+          text-align: left;
+          color: rgba(72,194,200,1)!important;
+          border: 1px dotted #f1f1f1;
+          border-radius: 1em;
         }
 
         .product_holder h5 {
@@ -404,7 +422,7 @@ export default function Products({
         }
 
         .overview_list {
-          color: #7f8c8d;
+          color: #222;
           font-size: .65em;
           padding-left: .95em;
           line-height: 2em;
@@ -454,7 +472,7 @@ export default function Products({
           display: inline-block;
           margin-right: 1.5em;
           font-size: .85em;
-          color:#ed1d5f;
+          color: #48c2c8;
           cursor: pointer;
         }
 
@@ -476,7 +494,7 @@ export default function Products({
         @media only screen and (max-width: 1024px) {
           .product_holder {
             width: 20em;
-            height: 35em;
+            height: 40em;
           }
         }
         @media only screen and (max-width: 768px) {
