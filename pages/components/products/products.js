@@ -76,7 +76,7 @@ export default function Products({
       </li>
     </ul>
     </div>
-    <div className="col-6 notifications">
+    <div className="notifications">
       <h5 id="thehead"><b>Showing:</b> Random PPE Products </h5>
     </div>
 
