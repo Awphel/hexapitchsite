@@ -14,8 +14,12 @@ export default function Home() {
     <
     Head >
     <
-    title > Hexa < /title>
+    title > Hexa Medical Solutions < /title>
     <meta name= "viewport" content="width=device-width, initial-scale=1" />
+    <meta name = "keywords" content = "Medical supplies, Suppy chain management, Health care logistics, Procurement, covid 19 ppe kits, Quality Control" />
+    <meta name = "robots" content = "index,follow" />
+    <meta name = "description" content ="A new kind of medical supply chain. The first platform that brings together global supplies, standerdised quality control, and logistics. " />
+
     <
     link rel = "icon"
     href = "/favicon.ico" / >

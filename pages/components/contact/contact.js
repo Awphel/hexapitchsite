@@ -2,13 +2,17 @@ import Head from 'next/head';
 import NevigationBar from '../nevigation/nevigation.js';
 import ContactHeader from '../contact/header.js'
 export default function ServicesMain() {
-  return (
-  <>
+  return ( <
+    >
     <
     Head >
     <
-    title > Hexa < /title>
-    <meta name= "viewport" content="width=device-width, initial-scale=1" /> <
+    title > Hexa < /title> <
+    meta name = "viewport"
+    content = "width=device-width, initial-scale=1" / >
+
+
+    <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap CSS
@@ -25,14 +29,14 @@ export default function ServicesMain() {
     <
     /Head>
 
-    {/* Nevigation Starts */}
-        <
-        NevigationBar />
-        <
-        ContactHeader />
+    {
+      /* Nevigation Starts */
+    } <
+    NevigationBar / >
+    <
+    ContactHeader / >
 
     <
-
     script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossOrigin = "anonymous" > < /script> <
@@ -53,7 +57,7 @@ export default function ServicesMain() {
 
     <
     script type = "text/javasrcript"
-    src ="/typeform.js" ></script>
+    src = "/typeform.js" > < /script>
 
     <
     style jsx global > {
@@ -87,6 +91,7 @@ export default function ServicesMain() {
       `
     } < /style>
 
-     </>
+    <
+    />
   )
 }

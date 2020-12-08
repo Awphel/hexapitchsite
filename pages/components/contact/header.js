@@ -1,6 +1,6 @@
 export default function ContactHeader() {
-  return (
-    <>
+  return ( <
+    >
     <
     div className = "header" >
     <
@@ -8,33 +8,111 @@ export default function ContactHeader() {
     <
     div className = "col-sm intro" >
     <
-    h1 > Contact us< /h1 >
-    <span></span>
-    <p className="headingText">Head Office (London, United Kingdom)</p>
-    <p>Ivybridge House, 1 Adam St<br/>London WC2N, Tel: +44 12 564 345</p>
+    h1 > Contact us < /h1 > <
+    span > < /span> <
+    p className = "headingText" > Head Office(London, United Kingdom) < /p> <
+    p > Ivybridge House, 1 Adam St < br / > London WC2N, Tel: +44 12 564 345 < /p>
 
-    <hr className="linebreak"/>
+    <
+    hr className = "linebreak" / >
 
-    <div className="social">
-            <i className="fab fa-linkedin-in fa-2x mr-4" />
-            <i className="fab fa-twitter fa-2x mr-4" />
-            <i className="fab fa-facebook-f fa-2x" />
-        </div>
+    <
+    div className = "social" >
+    <
+    i className = "fab fa-linkedin-in fa-2x mr-4" / >
+    <
+    i className = "fab fa-twitter fa-2x mr-4" / >
+    <
+    i className = "fab fa-facebook-f fa-2x" / >
+    <
+    /div>
 
-     < /
+    <
+    /
     div >
-    < /
+    <
+    div className = "col-sm formHolder" >
+    <
+    form action = "https://formspree.io/f/myybnked"
+    method = "POST" >
+    <
+    p > <
+    label >
+    Your email: <
+    /label></p > <
+    input type = "text"
+    name = "_replyto"
+    placeholder = " please enter your email" / >
+    <
+    p > <
+    label >
+    Your message: < /
+    label > < /p> <
+    textarea name = "message"
+    placeholder = " Write your message here..." > < /textarea>
+
+    <
+    p >
+    <
+    button type = "submit"
+    className = "submitBtn" > Send < /button> < /
+    p > < /
+    form >
+
+    <
+    /div> < /
     div >
 
     <
     /div>
 
     <
-    style jsx global> {
+    style jsx global > {
       `
-      .scrollCue {
-          color: #6f7c80;
-          font-size: .85em;
+      .formHolder {
+        background-color: #fff;
+        border-radius: .35em;
+        float: right;
+        margin-top: 8em;
+        margin-right: 5em;
+        padding: 2em;
+      }
+
+      .formHolder p {
+        color: #95A5A6;
+        font-size: .85em;
+      }
+
+      label {
+        margin-top: 1.5em;
+      }
+
+      input {
+        width: 30em;
+        border-radius: 3em;
+        border: .2em solid #323a6b;
+        background-color: ;
+      }
+
+      textarea {
+        width: 30em;
+        border: .2em solid #323a6b;
+        border-radius: .5em;
+      }
+
+      .submitBtn {
+          background-color: #323a6b;
+          border-radius: 3em;
+          transition: .5s;
+          margin-top: 2em;
+          border: none;
+          color: #fff;
+          width: 8em;
+      }
+      .submitBtn:hover {
+          color: #323A6B;
+          background-color: #fff;
+          border: 2px solid #323a6b;
       }
 
       .social {
@@ -97,20 +175,6 @@ export default function ContactHeader() {
         width: 1em;
       }
 
-      .textLINK {
-        line-height: 3em;
-        color: rgb(72,194,200);
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: .8s;
-        margin-left: .8em;
-      }
-
-      .textLINK:hover {
-        color: rgb(50,58,107);
-        text-decoration: none!important;
-      }
-
       .header {
         background-image: url("/head_image_contact.png");
         background-position: right;
@@ -147,6 +211,6 @@ export default function ContactHeader() {
         }
       }
       `
-    } < /style> </>
+    } < /style> </ >
   )
 }

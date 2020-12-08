@@ -19,7 +19,12 @@ export default function Products({
     Head >
     <
     title > Hexa - Products < /title>
-    <meta name= "viewport" content="width=device-width, initial-scale=1" /> <
+    <meta name= "viewport" content="width=device-width, initial-scale=1" />
+    <meta name = "keywords" content = "Sterile Gowns, Aprons, Visors, Respirators, Surgical Gloves, Faceshields, Protective Clothing, covid 19 ppe kits, Face Mask" />
+    <meta name = "robots" content = "index,follow" />
+    <meta name = "description" content ="We provide more than just a service, we understand your frustrations. We're here to help you source the equipment you need, at the grade you require and at the price that works for your budget." />
+
+     <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap lightbox

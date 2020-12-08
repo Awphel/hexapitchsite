@@ -13,9 +13,12 @@ export default function AboutUS() {
     <
     Head >
     <
-    title > Hexa < /title>
+    title > Hexa - About Us < /title>
     <meta name= "viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="." /> <
+    <meta name = "keywords" content = "Medical supplies, Suppy chain management, Health care logistics, Procurement, covid 19 ppe kits, Quality Control" />
+    <meta name = "robots" content = "index,follow" />
+    <meta name = "description" content ="We provide more than just a service, we understand your frustrations. We're here to help you source the equipment you need, at the grade you require and at the price that works for your budget." />
+     <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap CSS

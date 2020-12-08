@@ -13,7 +13,12 @@ export default function ServicesMain() {
     Head >
     <
     title > Hexa - Services < /title>
-    <meta name= "viewport" content="width=device-width, initial-scale=1" /> <
+    <meta name= "viewport" content="width=device-width, initial-scale=1" />
+    <meta name= "viewport" content="width=device-width, initial-scale=1" />
+    <meta name = "keywords" content = "Medical supplies, Suppy chain management, Health care logistics, Procurement, covid 19 ppe kits, Quality Control" />
+    <meta name = "robots" content = "index,follow" />
+    <meta name = "description" content ="We integrate quality management with supply chain management. A system where you only need to tell us what you need, and we take care of the rest for you." />
+     <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap CSS
