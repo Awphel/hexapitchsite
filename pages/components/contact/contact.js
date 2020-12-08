@@ -10,7 +10,15 @@ export default function ServicesMain() {
     title > Hexa < /title> <
     meta name = "viewport"
     content = "width=device-width, initial-scale=1" / >
-
+    <
+    meta name = "keywords"
+    content = "Medical supplies, Suppy chain management, Health care logistics, Procurement, covid 19 ppe kits, Quality Control" / >
+    <
+    meta name = "robots"
+    content = "index,follow" / >
+    <
+    meta name = "description"
+    content = "We provide more than just a service, feel free to contact us about your Medical suppy needs." / >
 
     <
     link rel = "icon"

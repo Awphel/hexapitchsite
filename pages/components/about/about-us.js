@@ -8,17 +8,24 @@ import Vision from '../about/vision.js';
 import Team from '../about/team.js';
 
 export default function AboutUS() {
-  return (
-  <>
+  return ( <
+    >
     <
     Head >
     <
-    title > Hexa - About Us < /title>
-    <meta name= "viewport" content="width=device-width, initial-scale=1" />
-    <meta name = "keywords" content = "Medical supplies, Suppy chain management, Health care logistics, Procurement, covid 19 ppe kits, Quality Control" />
-    <meta name = "robots" content = "index,follow" />
-    <meta name = "description" content ="We provide more than just a service, we understand your frustrations. We're here to help you source the equipment you need, at the grade you require and at the price that works for your budget." />
-     <
+    title > Hexa - About Us < /title> <
+    meta name = "viewport"
+    content = "width=device-width, initial-scale=1" / >
+    <
+    meta name = "keywords"
+    content = "Medical supplies, Suppy chain management, Health care logistics, Procurement, covid 19 ppe kits, Quality Control" / >
+    <
+    meta name = "robots"
+    content = "index,follow" / >
+    <
+    meta name = "description"
+    content = "We provide more than just a service, we understand your frustrations. We're here to help you source the equipment you need, at the grade you require and at the price that works for your budget." / >
+    <
     link rel = "icon"
     href = "/favicon.ico" / >
     //Bootstrap CSS
@@ -35,21 +42,21 @@ export default function AboutUS() {
     <
     /Head>
 
-    {/* Nevigation Starts */}
-        <
-        NevigationBar />
-        <
-        AboutHeader / >
-        <
-        WhyweExist />
-        <
-        Vision />
-        <
-        Team />
-        <
-        Footer />
-        <
-        Policy />
+    {
+      /* Nevigation Starts */ } <
+    NevigationBar / >
+    <
+    AboutHeader / >
+    <
+    WhyweExist / >
+    <
+    Vision / >
+    <
+    Team / >
+    <
+    Footer / >
+    <
+    Policy / >
     <
 
     script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -72,7 +79,7 @@ export default function AboutUS() {
 
     <
     script type = "text/javasrcript"
-    src ="/typeform.js" ></script>
+    src = "/typeform.js" > < /script>
 
     <
     style jsx global > {
@@ -103,6 +110,7 @@ export default function AboutUS() {
       `
     } < /style>
 
-     </>
+    <
+    />
   )
 }
