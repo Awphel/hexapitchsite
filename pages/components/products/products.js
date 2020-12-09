@@ -54,7 +54,7 @@ export default function Products({
     div className = "row showcase_window" >
     <div className="tertiary_NAV">
     {/* Secondary Nevigation buttons */}
-        <a onClick={() => togglePPE()} className="tertiaryButton">PPE<i className="fas fa-angle-down ml-2" /></a>
+        <a onClick={() => togglePPE()} className="tertiaryButton">PPE<img src="/icons/angle-down-solid.svg" className="fontAwesome-caret" alt="caret"/></a>
         <a onClick={() => mawaza()} className="tertiaryButton">MEDICAL</a>
         <a onClick={() => allProducts()} className="tertiaryButton ">PHARMACEUTICAL</a>
     </div>
@@ -297,6 +297,11 @@ export default function Products({
           scroll-snap-type: mandatory;
           zoom: 100%;
           color: #222;
+        }
+
+        .fontAwesome-caret {
+          width: .6em;
+          filter: invert(100%);
         }
 
         .secondaryCTA {

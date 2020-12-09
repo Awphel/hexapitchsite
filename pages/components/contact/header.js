@@ -49,7 +49,7 @@ export default function ContactHeader() {
     Your message: < /
     label > < /p> <
     textarea name = "message"
-    placeholder = " Write your message here..." > < /textarea>
+     >Write your message here... < /textarea>
 
     <
     p >
@@ -192,10 +192,15 @@ export default function ContactHeader() {
         padding-right: 15em;
       }
 
-      .textLINK_MORE {
-        color: rgb(257,29,95);
-        text-decoration: none;
-        transition: .8s;
+      @media only screen and (max-width: 1125px) {
+          .formHolder {
+            width: 20%;
+            margin-right: auto;
+            margin-left: auto;
+          }
+          textarea, input {
+            width: 95%;
+          }
       }
       @media only screen and (max-width: 540px) {
         .intro {
@@ -209,7 +214,17 @@ export default function ContactHeader() {
           margin-right: auto;
           margin-bottom: 5em;
         }
+        .formHolder {
+          width: 80%;
+          margin-top: 1.5em;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        textarea, input {
+          width: 99.5%;
+        }
       }
+
       `
     } < /style> </ >
   )

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export default function NevigationBar() {
-  return (
-  <>
+  return ( <
+    >
     <
     div className = "row" >
     <
@@ -37,46 +37,58 @@ export default function NevigationBar() {
     id = "navbarSupportedContent" >
 
     <
-    ul id="Nav-list" className = "navbar-nav ml-auto" >
+    ul id = "Nav-list"
+    className = "navbar-nav ml-auto" >
     <
     li className = "nav-item" >
     <
     a className = "nav-link"
     href = "/#" >
-    Home
-    </a>
-    < /
+    Home <
+    /a> <
+    /
     li >
 
-    <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Services
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="/components/services/services">SERVICES</a>
-          <a className="dropdown-item" href="/components/services/services/#supplyChain">Suppy chain management</a>
-          <a className="dropdown-item" href="/components/services/services/#quality">Quality compliance</a>
-        </div>
-      </li>
+    <
+    li className = "nav-item dropdown" >
+    <
+    a className = "nav-link dropdown-toggle"
+    href = "#"
+    id = "navbarDropdown"
+    role = "button"
+    data-toggle = "dropdown"
+    aria-haspopup = "true"
+    aria-expanded = "false" >
+    Services <
+    /a> <
+    div className = "dropdown-menu"
+    aria-labelledby = "navbarDropdown" >
+    <
+    a className = "dropdown-item"
+    href = "/components/services/services" > SERVICES < /a> <
+    a className = "dropdown-item"
+    href = "/components/services/services/#supplyChain" > Suppy chain management < /a> <
+    a className = "dropdown-item"
+    href = "/components/services/services/#quality" > Quality compliance < /a> <
+    /div> <
+    /li>
 
-     <
+    <
     li className = "nav-item" >
     <
     a className = "nav-link"
     href = "/#landingUS" >
-    Why Us
-    <
-        /a>
-    < /
+    Why Us <
+    /a> <
+    /
     li > <
     li className = "nav-item" >
     <
-    a className = "nav-link" href="/components/about/about-us"
-     >
-     About Us
-     <
-        /a>
-     < /
+    a className = "nav-link"
+    href = "/components/about/about-us" >
+    About Us <
+    /a> <
+    /
     li > <
     li className = "nav-item" >
     <
@@ -84,24 +96,28 @@ export default function NevigationBar() {
     href = "/components/contact/contact" > Contact < /a> < /
     li > <
     /ul> <
-    div id="number" className = "number_2" >
-      <a href="/components/products/products">
-     View Products</a>
-     <
+    div id = "number"
+    className = "number_2" >
+    <
+    a href = "/components/products/products" >
+    View Products < /a> <
     /div> < /
     div >
 
-    {/* scroll progress indicator */}
-        <div id="progress-container">
-            <div className="progress-bar" id="myBar"></div>
-        </div>
+    {
+      /* scroll progress indicator */ } <
+    div id = "progress-container" >
     <
+    div className = "progress-bar"
+    id = "myBar" > < /div> <
+    /div> <
     /nav>
 
-    < /
+    <
+    /
     div >
-    </div>
-<
+    <
+    /div> <
     style jsx global > {
       `
         #progress-container {
@@ -115,6 +131,9 @@ export default function NevigationBar() {
           transition: 0.3s;
 
 }
+        .navbar-light .navbar-toggler {
+          color: blue;
+        }
 
     .progress-bar {
           height: 4px;
@@ -282,7 +301,7 @@ export default function NevigationBar() {
     }
 }
         `
-    } < /style>
-  </>
-   )
+    } < /style> <
+    />
+  )
 }

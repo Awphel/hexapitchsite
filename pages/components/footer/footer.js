@@ -76,6 +76,7 @@ export default function Footer() {
         align-content: center;
         background-image: url("/footer_background.png");
         background-repeat: none;
+        background-size: cover;
         text-align: center;
         padding-top: 3em;
         padding-left: 0;
@@ -99,8 +100,8 @@ export default function Footer() {
       }
 
       .social_icons {
-          position: absolute;
-          left: 43%;
+          margin-left: auto;
+          margin-right: auto;
           margin-top: 2em;
       }
 
@@ -158,8 +159,9 @@ export default function Footer() {
             height: 30vh;
           }
           .social_icons {
-            left: 40%;
-            margin-top: 1em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
           }
       }
 
